@@ -99,7 +99,7 @@ def crawl_category(root, max_depth=2):
 
     return list(articles.values())
 
-def retrive():
+def retrieve():
     print("[START] Crawler", flush=True)
     start = time.perf_counter()
     
@@ -120,4 +120,4 @@ def retrive():
     print(f"Exec time: {elapsed:.2f}s\n")
 
 if __name__ == "__main__":
-    retrive()
+    retrieve()

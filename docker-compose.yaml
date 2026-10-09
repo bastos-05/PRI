@@ -90,11 +90,11 @@ x-airflow-common:
       condition: service_healthy
 
 services:
-  retrival:
+  retrieval:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: retrival
+    container_name: retrieval
   
   postgres:
     image: postgres:16
