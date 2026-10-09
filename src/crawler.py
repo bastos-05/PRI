@@ -1,6 +1,7 @@
 
 import requests
 import time
+import datetime
 import threading
 
 import csv
@@ -13,6 +14,7 @@ API = "https://en.wikipedia.org/w/api.php"
 request_lock = threading.Lock()
 state_lock = threading.Lock()
 next_request_time = 0.0
+workers = 1
 
 def get_members(category):
     global next_request_time
@@ -149,7 +151,6 @@ def crawl_category(root, max_depth=2):
         flush=True
     )
 
-    workers = 3
     print(f"[START] Crawling {root} Max Workers: {workers}", flush=True)
     
     with ThreadPoolExecutor(max_workers=workers) as executor:
@@ -160,21 +161,24 @@ def crawl_category(root, max_depth=2):
         for _ in range(workers):
             queue.put(None)
 
-        #for future in futures:
-        #    future.result()
+        for future in futures:
+            future.result()
     
     return list(articles.values())
 
-def retrieveThread():
-    print("[START] Crawler with threading", flush=True)
+def crawler():
+
+    print(f"[START] Crawler using {workers} Threads (Workers)", flush=True)
     start = time.perf_counter()
     
     articles = crawl_category(
         "Category:Man-made disasters",
-        max_depth=3
+        max_depth=0
     )
 
-    with open('/app/src/test.csv', 'w', newline='') as f:
+    ct = datetime.datetime.now()
+
+    with open(f'/app/src/{ct}-index.csv', 'w', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=articles[0].keys())
         
         writer.writeheader()
@@ -186,4 +190,4 @@ def retrieveThread():
     print(f"Exec time: {elapsed:.2f}s\n")
 
 if __name__ == "__main__":
-    retrieveThread()
+    crawler()
