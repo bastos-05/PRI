@@ -16,7 +16,7 @@ state_lock = threading.Lock()
 next_request_time = 0.0
 workers = 1
 
-def get_members(category):
+def get_members(session, category):
     global next_request_time
 
     params = {
@@ -29,59 +29,57 @@ def get_members(category):
         "maxlag": 5,
     }
 
-    with requests.Session() as session:
-        session.headers.update({"User-Agent": "PRIResearchCrawler/1.0 (contact: up202207447@up.pt)"})
 
-        while True:
-            for attempt in range(5):
+    while True:
+        for attempt in range(5):
 
-                with request_lock:
-                    now = time.monotonic()
-                    delay = max(0, next_request_time - now)
-                    if delay:
-                        time.sleep(delay)
-                    next_request_time = time.monotonic() + 0.5
+            with request_lock:
+                now = time.monotonic()
+                delay = max(0, next_request_time - now)
+                if delay:
+                    time.sleep(delay)
+                next_request_time = time.monotonic() + 0.35
 
-                try:
-                    response = session.get(
-                        API, params=params, timeout=30
-                    )
+            try:
+                response = session.get(
+                    API, params=params, timeout=30
+                )
 
-                    if response.status_code in (429, 503):
-                        delay = float(response.headers.get(
-                            "Retry-After", max(5, 2 ** attempt)
-                        ))
-                        time.sleep(delay)
-                        continue
+                if response.status_code in (429, 503):
+                    delay = float(response.headers.get(
+                        "Retry-After", max(5, 2 ** attempt)
+                    ))
+                    time.sleep(delay)
+                    continue
 
-                    response.raise_for_status()
-                    data = response.json()
+                response.raise_for_status()
+                data = response.json()
 
-                    if data.get("error", {}).get("code") == "maxlag":
-                        delay = float(response.headers.get(
-                            "Retry-After", 5
-                        ))
-                        time.sleep(max(5, delay))
-                        continue
+                if data.get("error", {}).get("code") == "maxlag":
+                    delay = float(response.headers.get(
+                        "Retry-After", 5
+                    ))
+                    time.sleep(max(5, delay))
+                    continue
 
-                    if "error" in data:
-                        raise RuntimeError(data["error"])
+                if "error" in data:
+                    raise RuntimeError(data["error"])
 
-                    break
-
-                except requests.RequestException:
-                    if attempt == 4:
-                        raise
-                    time.sleep(max(5, 2 ** attempt))
-            else:
-                raise RuntimeError(f"Retries exhausted: {category}")
-
-            yield from data["query"]["categorymembers"]
-
-            if "continue" not in data:
                 break
 
-            params.update(data["continue"])
+            except requests.RequestException:
+                if attempt == 4:
+                    raise
+                time.sleep(max(5, 2 ** attempt))
+        else:
+            raise RuntimeError(f"Retries exhausted: {category}")
+
+        yield from data["query"]["categorymembers"]
+
+        if "continue" not in data:
+            break
+
+        params.update(data["continue"])
 
 def crawl_category(root, max_depth=2):
     queue = Queue()
@@ -92,64 +90,60 @@ def crawl_category(root, max_depth=2):
     errors = []
 
     def worker(worker_id):
-        while True:
-            item = queue.get()
+        with requests.Session() as session:
+            session.headers.update({
+                "User-Agent": "PRIResearchCrawler/1.0 (contact: ...)"
+            })
 
-            if item is None:
-                queue.task_done()
-                return
+            while True:
+                item = queue.get()
 
-            category, depth = item
+                if item is None:
+                    queue.task_done()
+                    return
 
-            try:
-                print(f"[CATEGORY] Depth={depth} | {category} | WorkerId: {worker_id}", flush=True)
+                category, depth = item
 
-                members = list(get_members(category))
-                new_articles = 0
+                try:
+                    print(f"[CATEGORY] Depth={depth} | {category} | WorkerId: {worker_id}", flush=True)
 
-                with state_lock:
-                    for member in members:
-                        if member["ns"] == 0: #https://www.mediawiki.org/wiki/Help:Namespaces
-                            page_id = member["pageid"]
-            
-                            if page_id not in articles:
-                                new_articles += 1
-                                articles.setdefault(page_id, {
-                                    "id": page_id,
-                                    "title": member["title"],
-                                    "categories": set()
-                                })
-            
-                            articles[page_id]["categories"].add(category)
-            
-                        elif member["ns"] == 14 and depth < max_depth:
-                            subcategory = member["title"]
+                    members = list(get_members(session, category))
+                    new_articles = 0
 
-                            if subcategory not in visited_categories:
-                                visited_categories.add(subcategory)
-                                queue.put((subcategory, depth + 1))
-                print(
-                    f"[DONE] {category} | "
-                    f"New articles: {new_articles} | "
-                    f"Total: {len(articles)} | "
-                    f"Queue: {queue.qsize()}",
-                    flush=True
-                )
-            except Exception as e:
-                with state_lock:
-                    errors.append((category, str(e)))
-                print(f"[ERROR] {category}: {e}", flush=True)
-            finally:
-                queue.task_done()
+                    with state_lock:
+                        for member in members:
+                            if member["ns"] == 0: #https://www.mediawiki.org/wiki/Help:Namespaces
+                                page_id = member["pageid"]
+                
+                                if page_id not in articles:
+                                    new_articles += 1
+                                    articles.setdefault(page_id, {
+                                        "id": page_id,
+                                        "title": member["title"],
+                                        "categories": set()
+                                    })
+                
+                                articles[page_id]["categories"].add(category)
+                
+                            elif member["ns"] == 14 and depth < max_depth:
+                                subcategory = member["title"]
 
-    for article in articles.values():
-        article["categories"] = sorted(article["categories"])
-
-    print(
-        f"[FINISHED] Categories: {len(visited_categories)} | "
-        f"Unique articles: {len(articles)}",
-        flush=True
-    )
+                                if subcategory not in visited_categories:
+                                    visited_categories.add(subcategory)
+                                    queue.put((subcategory, depth + 1))
+                    print(
+                        f"[DONE] {category} | "
+                        f"New articles: {new_articles} | "
+                        f"Total: {len(articles)} | "
+                        f"Queue: {queue.qsize()}",
+                        flush=True
+                    )
+                except Exception as e:
+                    with state_lock:
+                        errors.append((category, str(e)))
+                    print(f"[ERROR] {category}: {e}", flush=True)
+                finally:
+                    queue.task_done()
 
     print(f"[START] Crawling {root} Max Workers: {workers}", flush=True)
     
@@ -163,6 +157,15 @@ def crawl_category(root, max_depth=2):
 
         for future in futures:
             future.result()
+
+        for article in articles.values():
+            article["categories"] = sorted(article["categories"])
+
+        print(
+            f"[FINISHED] Categories: {len(visited_categories)} | "
+            f"Unique articles: {len(articles)}",
+            flush=True
+        )
     
     return list(articles.values())
 
@@ -173,7 +176,7 @@ def crawler():
     
     articles = crawl_category(
         "Category:Man-made disasters",
-        max_depth=0
+        max_depth=1
     )
 
     ct = datetime.datetime.now()
