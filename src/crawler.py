@@ -153,6 +153,13 @@ def crawl_category(root, max_depth=2):
             (max_depth,)
         ).fetchall()
 
+        processed_categories = {
+            row[0]
+            for row in conn.execute(
+                "SELECT name FROM categories WHERE processed = 1"
+            )
+        }
+
         root_processed = conn.execute(
             "SELECT processed FROM categories WHERE name = ?",
             (root,)
@@ -213,7 +220,11 @@ def crawl_category(root, max_depth=2):
                             elif member["ns"] == 14:
                                 subcategory = member["title"]
 
-                                if depth < max_depth and subcategory not in visited_categories: #and subcategory not in processed_categories:
+                                if (
+                                    depth < max_depth 
+                                    and subcategory not in visited_categories
+                                    and subcategory not in processed_categories
+                                ):
                                     visited_categories.add(subcategory)
                                     crawler_queue.put((subcategory, depth + 1))
 
@@ -271,8 +282,10 @@ def crawl_category(root, max_depth=2):
 
                     conn.execute(
                         """
-                        INSERT OR IGNORE INTO categories (name, depth)
+                        INSERT INTO categories (name, depth)
                         VALUES (?, ?)
+                        ON CONFLICT(name) DO UPDATE SET
+                            depth = MIN(categories.depth, excluded.depth)
                         """,
                         (subcategory, depth+1)
                     )
@@ -355,13 +368,22 @@ def crawl_category(root, max_depth=2):
     with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = [executor.submit(worker, i) for i in range(workers)]
 
-        crawler_queue.join()
+        try:
+            print("[WAIT] crawler_queue.join()", flush=True)
+            crawler_queue.join()
+            print("[OK] crawler_queue.join()", flush=True)
 
-        for _ in range(workers):
-            crawler_queue.put(None)
+        finally:
+            print("[STOP] Sending shutdown signals", flush=True)
 
+            for _ in range(workers):
+                crawler_queue.put(None)
+
+        print("[WAIT] Worker futures", flush=True)
         for future in futures:
             future.result()
+
+        print("[OK] All crawler workers stopped", flush=True)
 
         for article in articles.values():
             article["categories"] = sorted(article["categories"])
@@ -372,10 +394,14 @@ def crawl_category(root, max_depth=2):
             flush=True
         )
 
+    print("[WAIT] db_queue.join()", flush=True)
     db_queue.join()
-    db_queue.put(None)
+    print("[OK] db_queue.join()", flush=True)
 
+    db_queue.put(None)
     db_thread.join()
+
+    print("[OK] DB worker stopped", flush=True)
 
     if errors or db_errors:
         raise RuntimeError(
@@ -416,7 +442,7 @@ def crawler():
     
     articles = crawl_category(
         "Category:Man-made disasters",
-        max_depth=6
+        max_depth=8
     )
 
     elapsed = time.perf_counter() - start
