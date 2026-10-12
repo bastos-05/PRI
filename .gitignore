@@ -4,4 +4,3 @@ logs/
 __pycache__/
 *.py[cod]
 src/*.csv
-data/
