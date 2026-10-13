@@ -12,7 +12,10 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 API = "https://en.wikipedia.org/w/api.php"
-DB_PATH = "/app/data/crawler.db"
+if os.path.exists("/opt/airflow"):
+    DB_PATH = "/opt/airflow/data/crawler.db"
+else:
+    DB_PATH = "/app/data/crawler.db"
 
 request_lock = threading.Lock()
 state_lock = threading.Lock()
