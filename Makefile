@@ -7,7 +7,7 @@ build:
 	docker build -t $(IMAGE) .
 
 run:
-	docker run --name $(CONTAINER) -v $(CURDIR)/src:/app/src -v $(CURDIR)/data:/app/data $(IMAGE)
+	docker run --name $(CONTAINER) -v $(CURDIR)/src:/app/src -v $(CURDIR)/data:/app/data -v $(CURDIR)/models:/app/models $(IMAGE)
 
 start:
 	docker start -a $(CONTAINER)
@@ -20,7 +20,7 @@ clean:
 
 rebuild: build
 	docker rm -f $(CONTAINER) 2>/dev/null || true
-	docker run --name $(CONTAINER) -v $(CURDIR)/src:/app/src -v $(CURDIR)/data:/app/data $(IMAGE)
+	docker run --name $(CONTAINER) -v $(CURDIR)/src:/app/src -v $(CURDIR)/data:/app/data -v $(CURDIR)/models:/app/models $(IMAGE)
 
 list:
 	@docker exec crawler-container python -c "\

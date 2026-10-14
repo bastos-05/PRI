@@ -4,3 +4,6 @@ logs/
 __pycache__/
 *.py[cod]
 src/*.csv
+models/
+data/crawler.backup.db
+data/crawler.backup.faulty.db
