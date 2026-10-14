@@ -1,12 +1,22 @@
 import sqlite3
 import numpy as np
+from pathlib import Path
 from sentence_transformers import SentenceTransformer
 # Multi-Otsu baseado (Otsu method usado em image segmentation mas acho que se aplica a qui por que a ideia é tentar separar em grupos)
 from skimage.filters import threshold_multiotsu
 from collections import defaultdict
 import csv
+import json
+import os
 
-DB_PATH = "data/crawler.db"
+if os.path.exists("/opt/airflow"):
+    DB_PATH = "/opt/airflow/data/crawler.db"
+    PROMOTED_PATH = "/opt/airflow/data/promoted_categories.csv"
+    MODEL_PATH = Path("/opt/airflow/models/all-MiniLM-L6-v2")
+else:
+    DB_PATH = "/app/data/crawler.db"
+    PROMOTED_PATH = "/app/data/promoted_categories.csv"
+    MODEL_PATH = Path("/app/data/models/all-MiniLM-L6-v2")
 
 TOPICS = [
     "Aviation accidents and disasters",
@@ -23,6 +33,23 @@ MEDIUM = 1
 HIGH = 2
 MIN_PARENT_CHILD_SIM = 0.6
 MIN_HIGH_PARENT_RATIO = 1.0
+
+def get_filter_config():
+    config = json.loads(os.environ.get("FILTER_CONFIG") or "{}")
+
+    graph = config.get("graph") or {}
+
+    return {
+        "topics": config.get("topics") or TOPICS,
+        "min_sim": graph.get(
+            "min_parent_child_similarity",
+            MIN_PARENT_CHILD_SIM
+        ),
+        "min_ratio": graph.get(
+            "min_high_parent_ratio",
+            MIN_HIGH_PARENT_RATIO
+        )
+    }
 
 def build_graph():
     with sqlite3.connect(DB_PATH) as conn:
@@ -50,7 +77,7 @@ def get_categories_group(scores, threshold_high, threshold_low):
 def promoted_csv(groups, new_groups, categories_graph, category_index, categories, scores):
     promoted = np.where(new_groups > groups)[0]
 
-    with open("data/promoted_categories.csv", "w", newline="") as f:
+    with open(PROMOTED_PATH, "w", newline="") as f:
         writer = csv.writer(f)
 
         writer.writerow([
@@ -86,6 +113,11 @@ def adjust_groups_with_graph(
     threshold_high,
     threshold_low
 ):
+    config = get_filter_config()
+
+    min_parent_child_similarity = config["min_sim"]
+    min_high_parent_ratio = config["min_ratio"]
+
     category_index = {
         name: i for i, name in enumerate(categories)
     }
@@ -126,12 +158,12 @@ def adjust_groups_with_graph(
 
         high_parent_ratio = (len(high_parent_indices) / len(parent_indices))
 
-        if high_parent_ratio < MIN_HIGH_PARENT_RATIO:
+        if high_parent_ratio < min_high_parent_ratio:
             continue
 
         parent_child_similarities = (category_embeddings[high_parent_indices] @ category_embeddings[i])
 
-        valid_positions = np.where(parent_child_similarities >= MIN_PARENT_CHILD_SIM)[0]
+        valid_positions = np.where(parent_child_similarities >= min_parent_child_similarity)[0]
 
         if len(valid_positions) == 0:
             continue
@@ -191,9 +223,17 @@ def automatic_percentiles(scores):
 
 def start_filtering():
 
+    config = get_filter_config()
+    topics = config["topics"]
+    
+    if not MODEL_PATH.is_dir():
+        raise FileNotFoundError(
+            f"Modelo não encontrado em {MODEL_PATH}"
+        )
+
     #all-MiniLM-L6-v2 transforma texto em vetores com 384 dimensoes
     model = SentenceTransformer(
-        "models/all-MiniLM-L6-v2",
+        str(MODEL_PATH),
         local_files_only=True
     )
 
@@ -221,7 +261,7 @@ def start_filtering():
 
     # MAtriz vetores dos topicos
     topic_embeddings = model.encode(
-        TOPICS,
+        topics,
         normalize_embeddings=True # normaliza os vetores
     )
 
@@ -236,7 +276,7 @@ def start_filtering():
         print(
             f"{scores[i]:.4f} | "
             f"{categories[i]} | "
-            f"{TOPICS[similarities[i].argmax()]}"
+            f"{topics[similarities[i].argmax()]}"
         )
 
     print(f"\nLast 30 categories (Total {len(scores)}):")
@@ -244,7 +284,7 @@ def start_filtering():
         print(
             f"{scores[i]:.4f} | "
             f"{categories[i]} | "
-            f"{TOPICS[similarities[i].argmax()]}"
+            f"{topics[similarities[i].argmax()]}"
         )
 
     print("Score statistics")
@@ -280,3 +320,6 @@ def start_filtering():
         print(f"Threshold {threshold:.1f}: {count} categories")
 
     groups, new_groups = adjust_groups_with_graph(categories, scores, category_embeddings, threshold_high, threshold_low)
+
+if __name__ == "__main__":
+    start_filtering()

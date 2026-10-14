@@ -18,13 +18,23 @@ with DAG(
     schedule=None,  
     start_date=datetime(2026, 1, 1),
     catchup=False,
-    tags=['pri', 'crawler', 'wikipedia', 'blacklist'],
+    tags=['pri', 'crawler', 'wikipedia', 'embeddings'],
 ) as dag:
 
-    # Tarefa para aplicar a Blacklist (marca as categorias com processed = -1)
-    apply_blacklist_task = BashOperator(
-        task_id='apply_blacklist_filter',
-        bash_command='python /opt/airflow/src/blackList_filter.py',
+    # Tarefa para aplicar o filtro
+    apply_filter_task = BashOperator(
+        task_id='apply_filter_task',
+        bash_command='python /opt/airflow/src/embeddings_filter.py',
+        env={
+            "FILTER_CONFIG": "{{ dag_run.conf | tojson }}"
+        },
+        append_env=True,
+    )
+
+    # Tarefa para dar download do modelo de embeddings
+    download_model_task = BashOperator(
+        task_id='download_model_task',
+        bash_command='python /opt/airflow/src/download_model.py',
     )
 
     # correr o Crawler (apenas processa o que restou pendente)
@@ -34,4 +44,4 @@ with DAG(
     )
 
     # Ordem de execução
-    apply_blacklist_task >> run_crawler_task
+    [download_model_task, run_crawler_task] >> apply_filter_task

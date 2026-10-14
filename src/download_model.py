@@ -1,9 +1,14 @@
 from pathlib import Path
 from sentence_transformers import SentenceTransformer
 import shutil
+import os
 
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
-MODEL_PATH = Path("/app/models/all-MiniLM-L6-v2")
+if os.path.exists("/opt/airflow"):
+    MODEL_PATH = Path("/opt/airflow/models/all-MiniLM-L6-v2")
+else:
+    MODEL_PATH = Path("/app/models/all-MiniLM-L6-v2")
+
 TEMP_PATH = MODEL_PATH.with_name(MODEL_PATH.name + ".tmp")
 
 def download_model():
@@ -42,3 +47,6 @@ def download_model():
     TEMP_PATH.rename(MODEL_PATH)
 
     print("[MODEL] Ready", flush=True)
+
+if __name__ == "__main__":
+    download_model()
