@@ -4,6 +4,7 @@ from sentence_transformers import SentenceTransformer
 # Multi-Otsu baseado (Otsu method usado em image segmentation mas acho que se aplica a qui por que a ideia é tentar separar em grupos)
 from skimage.filters import threshold_multiotsu
 from collections import defaultdict
+import csv
 
 DB_PATH = "data/crawler.db"
 
@@ -20,6 +21,8 @@ TOPICS = [
 LOW = 0
 MEDIUM = 1
 HIGH = 2
+MIN_PARENT_CHILD_SIM = 0.6
+MIN_HIGH_PARENT_RATIO = 1.0
 
 def build_graph():
     with sqlite3.connect(DB_PATH) as conn:
@@ -35,7 +38,7 @@ def build_graph():
 
     return parents
 
-def score_by_group(scores, threshold_high, threshold_low):
+def get_categories_group(scores, threshold_high, threshold_low):
     groups = np.where(
         scores >= threshold_high,
         HIGH,
@@ -44,72 +47,134 @@ def score_by_group(scores, threshold_high, threshold_low):
 
     return groups
 
-def adjust_groups_with_graph(categories, scores, threshold_high, threshold_low):
-    
+def promoted_csv(groups, new_groups, categories_graph, category_index, categories, scores):
+    promoted = np.where(new_groups > groups)[0]
+
+    with open("data/promoted_categories.csv", "w", newline="") as f:
+        writer = csv.writer(f)
+
+        writer.writerow([
+            "category",
+            "semantic_score",
+            "original_group",
+            "graph_group",
+            "high_parents",
+            "relevant"
+        ])
+
+        for i in promoted:
+            high_parents = [
+                parent
+                for parent in categories_graph[categories[i]]
+                if parent in category_index
+                and groups[category_index[parent]] == HIGH
+            ]
+
+            writer.writerow([
+                categories[i],
+                float(scores[i]),
+                int(groups[i]),
+                int(new_groups[i]),
+                "; ".join(high_parents),
+                ""
+            ])
+
+def adjust_groups_with_graph(
+    categories,
+    scores,
+    category_embeddings,
+    threshold_high,
+    threshold_low
+):
     category_index = {
         name: i for i, name in enumerate(categories)
     }
 
-    groups = score_by_group(scores, threshold_high, threshold_low) # grafo grupos inicial e usado para comparação evitando uma cascata
-    graph_groups = groups.copy()
-    parents = build_graph()
-    heuristica = 0.5
+    groups = get_categories_group(
+        scores,
+        threshold_high,
+        threshold_low
+    )
+
+    new_groups = groups.copy()
+    graph_categories = build_graph()
+
+    labels = ["LOW", "MEDIUM", "HIGH"]
+    promotions = []
 
     for category, i in category_index.items():
 
+        if groups[i] == HIGH:
+            continue
+
         parent_indices = [
             category_index[parent]
-            for parent in parents[category]
+            for parent in graph_categories[category]
             if parent in category_index
         ]
 
         if not parent_indices:
             continue
 
-        high_parents = sum(
-            groups[j] == HIGH
-            for j in parent_indices
-        )
+        high_parent_indices = [
+            j for j in parent_indices
+            if groups[j] == HIGH
+        ]
 
-        total_parents = len(parent_indices)
+        if not high_parent_indices:
+            continue
 
-        high_parent_ratio = high_parents / total_parents
+        high_parent_ratio = (len(high_parent_indices) / len(parent_indices))
 
-        if groups[i] == MEDIUM and high_parent_ratio >= heuristica:
-            graph_groups[i] = HIGH
+        if high_parent_ratio < MIN_HIGH_PARENT_RATIO:
+            continue
 
-        elif groups[i] == LOW and high_parent_ratio >= heuristica:
-            graph_groups[i] = MEDIUM
+        parent_child_similarities = (category_embeddings[high_parent_indices] @ category_embeddings[i])
 
-    labels = ["LOW", "MEDIUM", "HIGH"]
+        valid_positions = np.where(parent_child_similarities >= MIN_PARENT_CHILD_SIM)[0]
+
+        if len(valid_positions) == 0:
+            continue
+
+        if groups[i] == MEDIUM:
+            new_groups[i] = HIGH
+
+        elif groups[i] == LOW:
+            new_groups[i] = MEDIUM
+
+        matching_parents = [
+            (categories[high_parent_indices[pos]], float(parent_child_similarities[pos]))
+            for pos in valid_positions
+        ]
+
+        promotions.append((i, matching_parents, high_parent_ratio))
+
+    print("\nGraph filtering results")
+
     for value, label in enumerate(labels):
-
         before = np.count_nonzero(groups == value)
-        after = np.count_nonzero(graph_groups == value)
+        after = np.count_nonzero(new_groups == value)
 
         print(
             f"{label}: {before} -> {after} "
             f"({after - before:+d})"
         )
 
-    promoted = np.where(graph_groups > groups)[0]
+    print(f"Promoted categories: {len(promotions)}")
 
-    for i in promoted[:30]:
-        category = categories[i]
+    for i, matching_parents, ratio in promotions[:30]:
+        print(f"\n{categories[i]}")
+        print(f"\nSemantic score: {scores[i]:.3f}")
+        print(f"\nGroup: {labels[groups[i]]} -> {labels[new_groups[i]]}")
+        print(f"\nHIGH parent ratio: {ratio:.2f}")
 
-        high_parents = [
-            parent
-            for parent in parents[category]
-            if parent in category_index
-            and groups[category_index[parent]] == HIGH
-        ]
+        for parent, similarity in matching_parents:
+            print(f"Parent: {parent}")
+            print(f"(similarity: {similarity:.3f})")
 
-        print(
-            f"\n{category}"
-            f"\n  Score: {scores[i]:.3f}"
-            f"\n  Group: {labels[groups[i]]} -> {labels[graph_groups[i]]}"
-            f"\n  HIGH parents: {high_parents}"
-        )
+    promoted_csv(groups, new_groups, graph_categories, category_index, categories, scores)
+
+    return groups, new_groups
 
 def automatic_percentiles(scores):
     # Encontrar dois tresholds automaticamente
@@ -214,4 +279,4 @@ def start_filtering():
         count = np.count_nonzero(scores >= threshold)
         print(f"Threshold {threshold:.1f}: {count} categories")
 
-    adjust_groups_with_graph(categories, scores, threshold_high, threshold_low)
+    groups, new_groups = adjust_groups_with_graph(categories, scores, category_embeddings, threshold_high, threshold_low)

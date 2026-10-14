@@ -1,0 +1,910 @@
+category,semantic_score,original_group,sim060_ratio050,sim060_ratio075,sim060_ratio100,sim070_ratio050,sim070_ratio075,sim070_ratio100,sim075_ratio050,sim075_ratio075,sim075_ratio100,sim080_ratio050,sim080_ratio075,sim080_ratio100
+Category:1900s road incidents,0.42595958709716797,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1901 riots,0.44172191619873047,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1902 riots,0.43380144238471985,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1903 riots,0.4521881341934204,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1904 riots,0.4557584524154663,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1907 riots,0.43165329098701477,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1908 riots,0.4544239640235901,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1909 riots,0.42918726801872253,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1920 riots in the United States,0.3854082524776459,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1921 riots in the United States,0.39985764026641846,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1922 riots in the United States,0.4063943922519684,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:1923 riots in the United States,0.3870299756526947,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:1929 mining disasters,0.4477081894874573,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:1930s road incidents,0.4323895573616028,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1940s road incidents,0.4562513828277588,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1950s road incidents,0.43121084570884705,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1960s road incidents,0.41877391934394836,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1970s road incidents,0.4430065453052521,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1973 building bombings,0.4515954852104187,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:1980 riots,0.44724148511886597,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1980s road incidents in Europe,0.43405529856681824,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1981 riots,0.43928593397140503,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1982 riots,0.4161171615123749,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1982 road incidents,0.43660473823547363,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1983 riots,0.45652902126312256,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1986 riots,0.4480932354927063,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1987 riots,0.4384012520313263,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1987 road incidents,0.444508820772171,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1988 riots,0.44888460636138916,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1988 road incidents,0.45692333579063416,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1990s road incidents in Asia,0.4391067922115326,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1990s road incidents in Europe,0.4375460743904114,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1991 riots,0.4564394950866699,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1993 riots,0.45490404963493347,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1997 riots,0.45608624815940857,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1998 riots,0.43783867359161377,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1998 road incidents,0.4463557302951813,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1999 riots,0.43531280755996704,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:1999 road incidents,0.4550367295742035,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:19th-century anarchist terrorist incidents,0.382022500038147,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2000 riots,0.4591129720211029,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2010 riots,0.4578360617160797,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2011 riots,0.45401716232299805,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2013 riots,0.4596559405326843,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2014 riots,0.4280816614627838,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2015 riots,0.43677785992622375,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2016 riots,0.4342358410358429,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2017 riots,0.4392918348312378,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2018 riots,0.44406503438949585,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2019 riots,0.444349467754364,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:2024 building bombings,0.4563165307044983,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:2025 building bombings,0.4372555911540985,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:2026 building bombings,0.44680044054985046,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:20th-century anarchist terrorist incidents,0.3856256604194641,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:20th-century terrorist incidents by country,0.4541078805923462,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:20th-century terrorist incidents in Africa,0.3864268660545349,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:20th-century terrorist incidents in Asia,0.4415406286716461,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:20th-century terrorist incidents in Europe,0.43816953897476196,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:21st-century road incidents,0.4542449116706848,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:9/11 Commission,0.27895376086235046,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Accidents and incidents involving Ferrovie dello Stato Italiane,0.37800219655036926,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Accidents and incidents involving Kereta Api Indonesia,0.45044776797294617,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Accidents and incidents involving Metrolink (California),0.459044486284256,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Aerial bombing operations,0.37600982189178467,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Aerial bombs,0.43279606103897095,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Aerial bombs of Israel,0.37072116136550903,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Aerial operations and battles by war,0.31932663917541504,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Air Ministry during World War II,0.3789955675601959,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Aircraft collision avoidance systems,0.3871658444404602,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Aircraft hijackings by continent,0.45682647824287415,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Aircraft hijackings by country,0.42312461137771606,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Aircraft hijackings in Asia,0.4588014483451843,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Aircraft hijackings in China,0.41097015142440796,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Aircraft hijackings in India,0.4263524115085602,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Aircraft hijackings in Japan,0.3994700312614441,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Aircraft hijackings in Norway,0.42725419998168945,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Aircraft hijackings in Pakistan,0.4177456200122833,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Airport bombings in Afghanistan,0.4378947615623474,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Airport bombings in Iraq,0.4456973671913147,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Airport bombings in Libya,0.38853713870048523,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Airport bombings in Syria,0.41209492087364197,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Airport bombings in Yemen,0.41378724575042725,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Animal-borne bombs,0.43705642223358154,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Anti–nuclear weapons activists by nationality,0.40618395805358887,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Arson attacks on buses,0.44392094016075134,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Arson attacks on vehicles in France,0.43304625153541565,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Arson attacks on vehicles in Northern Ireland,0.45412755012512207,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Arson in England,0.44105541706085205,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Arson in India,0.4326489269733429,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Arson in Indonesia,0.39924854040145874,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Arson in Iran,0.4191478490829468,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Arson in Iraq,0.41226112842559814,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Arson in Japan,0.4133071303367615,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Arson in Kuwait,0.36544540524482727,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Arson in Northern Ireland,0.382595032453537,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Arson in Pakistan,0.4006699323654175,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Arson in Palestine,0.37891340255737305,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Arson in Wales,0.3853374421596527,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Arson in the Philippines,0.4062766432762146,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Atomic bombings of Hiroshima and Nagasaki in popular culture,0.4581250250339508,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Attacks in Cuba,0.29807648062705994,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Attacks on aircraft by Palestinian militant groups,0.3719503879547119,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Attacks on airports by country,0.40740618109703064,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Attacks on airports in Africa,0.41054731607437134,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Attacks on airports in Asia,0.42710956931114197,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Attacks on airports in Europe,0.41848990321159363,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Attacks on transport in Pakistan,0.45370930433273315,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Aviation in India–Pakistan wars and conflicts,0.4421195089817047,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Aviation in the Second Sino-Japanese War,0.40708813071250916,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Battleships sunk by aircraft,0.4202417731285095,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Battleships sunk by aircraft as targets,0.3944999575614929,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Boko Haram bombings,0.41805174946784973,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Boko Haram suicide bombings,0.3746538460254669,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Bomb disposal,0.43388256430625916,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Bombardments of the Yemeni civil war (2014–present),0.32908862829208374,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Bombings in the Iraqi insurgency,0.4572550356388092,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Bombings in the Iraqi insurgency (2003–2011),0.4214102327823639,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Brazilian nuclear weapons testing,0.4267674684524536,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Bridge disasters caused by scour damage,0.4372629225254059,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Bridge disasters in Costa Rica,0.44278383255004883,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Bridge disasters in Iraq,0.44380393624305725,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Bridge disasters in Israel,0.44170770049095154,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Bridge disasters in the Democratic Republic of the Congo,0.43742600083351135,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Bridge disasters involving open moveable bridges,0.4604021906852722,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Brigantines of the Continental Navy,0.28969740867614746,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Brigs of the Continental Navy,0.2851199805736542,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:British arsonists,0.4052305221557617,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:British nuclear test sites,0.44450119137763977,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Building and structure arson attacks in Bangladesh,0.43764859437942505,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building and structure arson attacks in Canada,0.4093027412891388,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building and structure arson attacks in France,0.41939446330070496,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building and structure arson attacks in Japan,0.458667129278183,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building and structure arson attacks in Russia,0.4441733956336975,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building and structure arson attacks in Turkey,0.45239853858947754,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building and structure fires in Australia,0.36868995428085327,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Building and structure fires in Ireland,0.3702884018421173,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Building and structure fires in Poland,0.3514695167541504,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Building and structure fires in Ukraine,0.3947119116783142,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Building bombings in Africa,0.44344329833984375,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Algeria,0.42342710494995117,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Ankara,0.42299050092697144,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Baghdad,0.4053250253200531,1,1,0,0,1,0,0,1,0,0,1,0,0
+"Category:Building bombings in Balochistan, Pakistan",0.4458732306957245,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Bangladesh,0.45212113857269287,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Beirut,0.4253276288509369,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Belgium,0.45552733540534973,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Colombia,0.4450511038303375,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Croatia,0.42611899971961975,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Cyprus,0.41090238094329834,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Damascus,0.404199481010437,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Ethiopia,0.4305320084095001,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in France,0.4376659095287323,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Georgia (U.S. state),0.43885740637779236,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Building bombings in Iraq,0.455300509929657,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Israel,0.456754595041275,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Kabul,0.44899922609329224,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Kenya,0.4288235008716583,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Lebanon,0.43472936749458313,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Libya,0.4197920262813568,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Madrid,0.4448113739490509,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Mali,0.3963063359260559,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Mogadishu,0.425289511680603,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Morocco,0.39592331647872925,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Myanmar,0.43178653717041016,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Nigeria,0.43050283193588257,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Northern Ireland,0.46026521921157837,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Norway,0.459460586309433,1,1,1,0,1,1,0,1,1,0,0,0,0
+Category:Building bombings in Palestine,0.38349565863609314,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Paris,0.4344728887081146,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Peru,0.4014790654182434,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Poland,0.45702552795410156,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Quetta,0.4368089735507965,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Somalia,0.44954946637153625,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Spain,0.44919657707214355,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Sri Lanka,0.4226258099079132,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Syria,0.40876495838165283,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Tel Aviv,0.40605783462524414,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Thailand,0.4419746696949005,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Tunisia,0.38780349493026733,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Turkey,0.45443296432495117,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Uganda,0.38602304458618164,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Building bombings in Ukraine,0.44789814949035645,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Building bombings in Vietnam,0.43801990151405334,1,1,1,0,1,1,0,1,1,0,0,0,0
+Category:Building bombings in Yemen,0.4486876428127289,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Buildings and structures destroyed by the 1906 San Francisco earthquake,0.3930763900279999,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Buildings and structures destroyed by the 2011 Tōhoku earthquake and tsunami,0.41681748628616333,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Buildings and structures destroyed by the 2023 Hawaii wildfires,0.4131821393966675,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Buildings and structures destroyed by the 2023 Turkey–Syria earthquake,0.4131498634815216,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Buildings and structures destroyed by the 2025 Myanmar earthquake,0.43643108010292053,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Buildings and structures destroyed by the Islamic State,0.39071419835090637,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Buildings and structures destroyed by tornado,0.4414495825767517,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Buildings and structures destroyed during the 2026 Iran war,0.4169152081012726,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Buildings and structures destroyed during the Gaza war,0.3970397710800171,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Buildings and structures destroyed during the Twelve-Day War,0.3854069113731384,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Buildings and structures destroyed in the September 11 attacks,0.4553912580013275,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Buildings and structures in Australia destroyed by arson,0.4204341471195221,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Buildings and structures in China destroyed during World War II,0.4109325110912323,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Buildings and structures in Denmark destroyed during World War II,0.3918873071670532,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Buildings and structures in Malta destroyed during World War II,0.36078929901123047,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Buildings and structures in Spain demolished during the Peninsular War,0.33758965134620667,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Buildings and structures in the United States destroyed by arson,0.44843026995658875,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Buildings and structures of the Philippines destroyed during World War II,0.3506627082824707,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Burned buildings and structures,0.42745840549468994,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Bus bombings in Africa,0.43988704681396484,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Bus bombings in Israel,0.45699822902679443,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Bus bombings in Kenya,0.4259902238845825,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Bus bombings in Turkey,0.45627057552337646,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Cambodian genocide survivors,0.39117559790611267,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Car and truck bombings in Burkina Faso,0.41009604930877686,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Car and truck bombings in Mali,0.4518539607524872,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Car and truck bombings in the Chechen wars,0.4329138696193695,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Car and truck bombings in the Israeli–Palestinian conflict,0.4591594338417053,1,1,1,0,1,1,0,1,1,0,0,0,0
+Category:Chernobyl (miniseries) episodes,0.3756614029407501,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Chernobyl exclusion zone,0.38105353713035583,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Chernobyl liquidators,0.41629621386528015,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Chinese nuclear test sites,0.42951974272727966,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Chinese nuclear weapons testing,0.44234034419059753,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Civilian deaths by Russian airstrikes,0.4598717987537384,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Climate activists,0.4190302789211273,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Climate change adaptation,0.3364236056804657,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Climate change and agriculture,0.318295419216156,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Climate change conferences,0.3681757152080536,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Climate change controversies,0.3943302631378174,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Climate change in art,0.31577908992767334,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Climate change mass media,0.40307843685150146,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Climate change organizations,0.3917417526245117,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Climate change policy,0.321230947971344,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Climate change protests,0.3891081213951111,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Climate justice,0.4118744134902954,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Cluster bomb attacks,0.35556817054748535,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Coal mining disasters in Alabama,0.44992735981941223,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Belgium,0.4596932828426361,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Bosnia and Herzegovina,0.4455563724040985,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Colorado,0.43988722562789917,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Illinois,0.45321759581565857,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Kentucky,0.4535825252532959,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Mexico,0.4567791819572449,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in New Mexico,0.45608505606651306,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in North Carolina,0.44265249371528625,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Ohio,0.44598522782325745,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Pennsylvania,0.4530849754810333,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Romania,0.42831215262413025,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Slovakia,0.4395018219947815,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Tennessee,0.43805360794067383,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Coal mining disasters in Wyoming,0.4542076289653778,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Collapses in churches,0.3892516791820526,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Collisions between ships and bridges,0.43082115054130554,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Communist terrorist incidents in Asia,0.45499324798583984,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Communist terrorist incidents in Europe,0.43115419149398804,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Communist terrorist incidents in India,0.4207497537136078,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Corvettes sunk by aircraft,0.35261911153793335,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Crimes related to the September 11 attacks,0.4197521507740021,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Criticism of the official accounts of the September 11 attacks,0.33444535732269287,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Cromañón nightclub fire,0.31920933723449707,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Crowd collapses and crushes in stadiums,0.3386293351650238,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Cruisers sunk by aircraft,0.4385426342487335,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Cruisers sunk by aircraft as targets,0.43213412165641785,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Cutters of the Continental Navy,0.3789230287075043,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Cycling road incident deaths,0.45928728580474854,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Dam failures by continent,0.4163961708545685,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Dam failures by country,0.4079945981502533,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Deaths by Azerbaijani airstrikes,0.4324899911880493,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Deaths by Greek airstrikes during World War II,0.4602835178375244,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Deaths by Israeli airstrikes,0.4506117105484009,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Deaths by Italian airstrikes during World War II,0.44934237003326416,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Deaths by Japanese airstrikes during World War II,0.44654157757759094,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Deaths by Malian airstrikes,0.40892916917800903,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Deaths by New Zealand airstrikes,0.4402199983596802,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Deaths by Pakistani airstrikes,0.46016791462898254,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Deaths by Saudi Arabian drone strikes,0.34565556049346924,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Deaths by Sri Lankan airstrikes,0.41807618737220764,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Deaths by Sudanese airstrikes,0.45340099930763245,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Deaths by Syrian airstrikes,0.41615864634513855,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Deaths by Ukrainian airstrikes,0.4479008913040161,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Deaths by acute radiation syndrome,0.4456217586994171,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Deaths by airstrike during the Libyan civil war (2011),0.3871428668498993,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Deaths by airstrike during the War in Iraq (2013–2017),0.44549301266670227,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Deaths by war,0.4262665808200836,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Deaths during traffic stops,0.4447084963321686,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Deaths on the RMS Titanic,0.45523756742477417,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Deaths on the White Ship,0.4512149393558502,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Destroyed religious buildings and structures,0.4092962443828583,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Destroyed sculptures,0.3072914183139801,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Destroyers sunk by aircraft,0.4321613311767578,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Economics and climate change,0.3600505590438843,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Effects of climate change,0.3560684621334076,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Electric locomotives,0.4008892774581909,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Failed dams in the United States,0.4448241591453552,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Failed terrorist attempts,0.354794442653656,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Failed terrorist attempts by continent,0.32648369669914246,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Failed terrorist attempts by country,0.3046959936618805,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Failed terrorist attempts in Asia,0.3400576412677765,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Failed terrorist attempts in Europe,0.32628870010375977,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Failed terrorist attempts in North America,0.31952980160713196,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Fiction about climate change,0.3915885388851166,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Fiction about train robbery,0.39433616399765015,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Filmed suicide bombings,0.40135854482650757,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Films about aircraft hijackings,0.41108471155166626,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Fires by city,0.36251330375671387,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Fires in London,0.3887135982513428,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Footballers killed in the 1960 Danish football air crash,0.36149224638938904,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Footballers killed in the 1987 Alianza Lima plane crash,0.4284355938434601,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Footballers killed in the 1993 Zambia national football team plane crash,0.4161899983882904,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Former nuclear power stations in the United Kingdom,0.4171888530254364,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:French nuclear weapons testing,0.4294663667678833,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Frigates of the Continental Navy,0.3249993920326233,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Frigates sunk by aircraft,0.4076395630836487,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Genocide deaths,0.4547780156135559,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:German inventions of the Nazi period,0.29548361897468567,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Ghost towns in the Chernobyl exclusion zone,0.33724862337112427,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Gold mining disasters,0.4310896694660187,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Great Train Robbery (1963),0.3447747528553009,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Grenade attacks in Afghanistan,0.4483274519443512,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Grenade attacks in Bangladesh,0.44254910945892334,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Grenade attacks in Iraq,0.45504921674728394,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Grenade attacks in Israel,0.42208731174468994,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Grenade attacks in Spain,0.4405697286128998,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Grenade attacks in Sri Lanka,0.422197163105011,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Grenade attacks in Syria,0.4020606279373169,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Grenade attacks in Turkey,0.4592381715774536,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Grenade attacks in Ukraine,0.45004019141197205,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Grenade attacks in Yemen,0.4538377821445465,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Grenades,0.42448145151138306,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Gunboats sunk by aircraft,0.45720618963241577,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Gundalows of the Continental Navy,0.301086962223053,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Hand grenades of Japan,0.4358150362968445,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Hand grenades of Sweden,0.44464486837387085,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Hand grenades of the Soviet Union,0.4406990110874176,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Helicopter shootdowns during the Troubles (Northern Ireland),0.39834877848625183,1,1,1,0,0,0,0,0,0,0,0,0,0
+Category:History of the Royal Air Force during World War I,0.2564453184604645,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Hotel arson attacks,0.43738025426864624,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Hotel bombings by country,0.45869728922843933,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Hotel bombings in Afghanistan,0.40446656942367554,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Hotel bombings in Indonesia,0.4152412712574005,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Hotel bombings in Pakistan,0.4133587181568146,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 1990,0.45855021476745605,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 1991,0.4407166838645935,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 1992,0.44735053181648254,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 1993,0.416316419839859,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 1994,0.4419967532157898,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 1996,0.4539095461368561,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 1997,0.4459654986858368,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 1998,0.4553452432155609,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 2006,0.43556007742881775,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 2008,0.43052783608436584,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in 2009,0.44151726365089417,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Human stampedes in Africa,0.42506974935531616,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Human stampedes in South America,0.40635666251182556,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Images related to the Chernobyl disaster,0.4419528841972351,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Impact of the September 11 attacks on cinema,0.40557411313056946,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Impact of the September 11 attacks on television,0.40386730432510376,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Impact of the September 11 attacks on the video game industry,0.397354394197464,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Improvised explosive device bombings in Burkina Faso,0.45190298557281494,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Indian nuclear weapons testing,0.45223894715309143,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Individual aircraft of World War II,0.4033450186252594,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:International Atomic Energy Agency,0.35150623321533203,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Ironclad warships of the Union navy,0.3269345760345459,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Islamic State suicide bombings,0.4333065450191498,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Islamic State terrorist incidents in Austria,0.3913632333278656,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Islamic terrorism in Texas,0.29725804924964905,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Journalists who died as a result of terrorism,0.40772947669029236,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:K-129 submarine sinking accident,0.4257145822048187,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Korean War air bases,0.28997835516929626,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Kočani nightclub fire,0.30561238527297974,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Kursk submarine disaster,0.45239555835723877,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Lead poisoning incidents,0.4433140158653259,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Legal issues related to the September 11 attacks,0.42227935791015625,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Lists of 20th-century terrorist incidents,0.45582079887390137,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Lists of World War II aircraft,0.3485416769981384,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1820,0.39925119280815125,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1821,0.41002118587493896,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1822,0.3985407054424286,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1823,0.39782124757766724,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1824,0.41493797302246094,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1825,0.4222535789012909,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1826,0.35569021105766296,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1827,0.4182799458503723,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1828,0.4034494459629059,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1829,0.41030532121658325,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1830,0.4273216724395752,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1831,0.4352187216281891,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1832,0.4042976200580597,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lists of shipwrecks in 1833,0.4449455440044403,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lists of terrorist incidents by year,0.43454045057296753,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Lists of terrorist incidents in Iraq,0.4279942810535431,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Lost submarines of Estonia,0.41936758160591125,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Lost submarines of the Soviet Union,0.3589896857738495,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Lost submarines of the United Kingdom,0.4226882755756378,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Maritime incidents in Lebanon,0.4541706144809723,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Maritime incidents in Papua New Guinea,0.4473748505115509,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Mass murders in Oceania,0.3364219069480896,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Massacres in South America,0.29847756028175354,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Massacres in the Caribbean,0.30877527594566345,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Medicine in Nazi Germany,0.21550887823104858,0,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Memorials for the September 11 attacks,0.3392391502857208,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Merchant ships sunk by aircraft,0.446958065032959,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Mid-air collisions,0.36904188990592957,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Mid-air collisions in Africa,0.44729360938072205,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Mid-air collisions in Asia,0.41700345277786255,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Mid-air collisions in Europe,0.45679524540901184,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Mid-air collisions in South America,0.4276116192340851,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Mid-air collisions in the Soviet Union,0.4347434639930725,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Mid-air collisions involving military aircraft,0.45302948355674744,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Military airships of World War I,0.29909488558769226,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Military aviation leaders of World War I,0.4306258261203766,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Military aviation units and formations in World War I,0.3845735490322113,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Military aviation units and formations of the Korean War,0.3644033968448639,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Military aviators by war,0.38928717374801636,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Military operations involving airports,0.3489285707473755,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Minesweepers sunk by aircraft,0.4524579346179962,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Missing submarines,0.4053550660610199,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Monuments and memorials for the Chernobyl disaster,0.4234484136104584,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Mosque bombings by continent,0.44309160113334656,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Motor torpedo boats sunk by aircraft,0.41760337352752686,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Motorcycle bombings in Afghanistan,0.457414448261261,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Motorcycle bombings in Pakistan,0.452466756105423,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Motorcycle bombings in Thailand,0.4318459630012512,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Motorcycle road incident deaths,0.414085328578949,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Museums destroyed by war,0.2890613079071045,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Nationalist terrorist incidents in the 20th century,0.403045117855072,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Native American genocide survivors,0.4352723956108093,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Naval bombing operations and battles,0.3850082755088806,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Naval history of World War II,0.3646944761276245,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Nevada Test Site nuclear explosive tests,0.34983623027801514,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:North Korean nuclear weapons testing,0.3962046504020691,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Nuclear air-to-surface missiles,0.41973406076431274,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Nuclear bunkers in Bosnia and Herzegovina,0.4467657208442688,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Nuclear bunkers in Canada,0.43135473132133484,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Nuclear bunkers in France,0.45240113139152527,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Nuclear bunkers in the United Kingdom,0.45619285106658936,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Nuclear program of Egypt,0.4579409658908844,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Nuclear spacecraft propulsion,0.365999311208725,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Nuclear submarines of the Soviet Navy,0.4458424746990204,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Nuclear test sites in Kazakhstan,0.4464675784111023,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Oil spills by continent,0.40957126021385193,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in Africa,0.4125063121318817,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in Asia,0.3850392699241638,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in Australia,0.37688198685646057,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in Canada,0.3360827565193176,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in Chile,0.3413245379924774,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in China,0.3639068603515625,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in Europe,0.3741466999053955,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in France,0.3368997871875763,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in India,0.3715941607952118,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in Mexico,0.36389392614364624,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in Nigeria,0.3525896370410919,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in Oceania,0.43442803621292114,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in South America,0.38086244463920593,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in the Philippines,0.38401585817337036,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Oil spills in the United Kingdom,0.43210673332214355,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Pakistani nuclear test sites,0.42731377482414246,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Pakistani nuclear weapons testing,0.417537659406662,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Palestinian terrorist incidents in Austria,0.33542007207870483,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Pedestrian road incident deaths,0.40774020552635193,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:People associated with the September 11 attacks,0.40596485137939453,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:People associated with the atomic bombings of Hiroshima and Nagasaki,0.4501674175262451,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:People associated with the nuclear weapons programme of the United Kingdom,0.45980608463287354,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:People killed by Islamic terrorism,0.3807738125324249,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:People killed by armed forces,0.3796791434288025,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:People of the Armenian genocide,0.3121283948421478,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:People of the Emergency (India),0.44105422496795654,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:People of the Herero and Nama genocide,0.33732128143310547,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:People of the Native American genocide in the United States,0.4062677025794983,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:People of the Rwandan genocide,0.3225172162055969,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Perpetrators of the July 2005 London bombings,0.43683308362960815,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Polaris (UK nuclear programme),0.3802206516265869,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Politics of climate change,0.3948506712913513,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Pollution events by year,0.45761343836784363,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Proceedings surrounding the September 11 attacks,0.3936683237552643,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Provisional IRA bombings in England,0.4284136891365051,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Provisional IRA bombings in Northern Ireland,0.3775227665901184,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Provisional IRA bombings in continental Europe,0.42424315214157104,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:RMS Titanic survivors,0.4269259572029114,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Religious action on climate change,0.3824257254600525,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Religious building and structure arson attacks,0.3998858332633972,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Religious buildings and structures in the United Kingdom destroyed by arson,0.41475996375083923,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Religious terrorist incidents,0.41484978795051575,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Religious terrorist incidents by religion,0.3898981511592865,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Research and development in Nazi Germany,0.272464781999588,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Residential building arson attacks,0.431330144405365,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Residential building bombings in France,0.43235471844673157,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Residential building bombings in Iraq,0.44106653332710266,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Residential building bombings in Lebanon,0.4319944977760315,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Residential building bombings in Palestine,0.37843888998031616,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Residential building bombings in Poland,0.43959692120552063,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Residential building bombings in Spain,0.44204238057136536,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Residential building bombings in Syria,0.4000066816806793,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Residential building bombings in Turkey,0.456219881772995,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Residential building bombings in Ukraine,0.44939181208610535,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Restaurant bombings in France,0.4004228115081787,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Restaurant bombings in Iraq,0.4392530024051666,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Restaurant bombings in Israel,0.43243443965911865,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Restaurant bombings in Spain,0.41839879751205444,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Restaurant bombings in Turkey,0.420375794172287,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Right-wing terrorist incidents in the 20th century,0.3379465341567993,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Road incident deaths by country,0.44380614161491394,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Road incident deaths in Europe,0.4437505602836609,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Road incident deaths in South America,0.4474811255931854,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Road incident deaths in the United States by state or territory,0.45201385021209717,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Road incidents by century,0.4408182203769684,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Road incidents by continent,0.44391417503356934,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Road incidents by decade,0.45845678448677063,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Road incidents in Africa,0.41903653740882874,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in Asia,0.4248935580253601,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in Asia by country,0.39323562383651733,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in England,0.4038850963115692,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in Europe,0.414399117231369,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in Europe by country,0.38050806522369385,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in Lebanon,0.37485387921333313,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Road incidents in London,0.40990883111953735,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in North America,0.4352754056453705,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in North America by country,0.40513545274734497,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in Northern Ireland,0.40868380665779114,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Road incidents in Oceania,0.4431532025337219,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in Oceania by country,0.4135410189628601,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Road incidents in Scotland,0.3976387679576874,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in South America,0.4026869833469391,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Road incidents in South America by country,0.38149696588516235,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Road incidents in Wales,0.4045981764793396,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Roswell incident,0.4559319019317627,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Row galleys of the Continental Navy,0.3629120886325836,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Ruins of churches destroyed during World War II,0.26032865047454834,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:School arson attacks,0.4450194239616394,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:School bombings by continent,0.4454420506954193,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:School bombings in Afghanistan,0.4154472351074219,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:School bombings in Iraq,0.4273627996444702,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:School bombings in Pakistan,0.42534714937210083,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:School bombings in Palestine,0.34753936529159546,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:School bombings in Russia,0.444235622882843,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:School bombings in Sri Lanka,0.3738904297351837,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:School bombings in Syria,0.36075425148010254,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:School bombings in Ukraine,0.39958903193473816,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:School buildings destroyed by arson,0.3769382834434509,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Schooners of the Continental Navy,0.44585660099983215,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Science in Nazi Germany,0.404435932636261,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:September 11 attacks in popular culture,0.44676098227500916,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Ships sunk by Argentine aircraft,0.42912113666534424,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Ships sunk by Australian aircraft,0.4563896954059601,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Ships sunk by British aircraft,0.45950692892074585,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Ships sunk by Canadian aircraft,0.41063055396080017,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Ships sunk by German aircraft,0.452472060918808,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Ships sunk by Italian aircraft,0.42686718702316284,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Ships sunk by Japanese aircraft,0.40285810828208923,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Ships sunk by Norwegian aircraft,0.4020653963088989,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Ships sunk by South African aircraft,0.44883978366851807,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Ships sunk by Soviet aircraft,0.43192577362060547,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Ships sunk by aircraft during the Battle of Crete,0.3787819445133209,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Shipwrecks by continent,0.4535585641860962,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks in the Arabian Sea,0.39131960272789,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks in the Baltic Sea,0.43359166383743286,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Shipwrecks in the Bering Sea,0.405815452337265,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks in the Bismarck Sea,0.4322952628135681,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Shipwrecks in the Black Sea,0.4354279339313507,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Shipwrecks in the Caribbean Sea,0.4273199439048767,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Shipwrecks in the Celtic Sea,0.4540857970714569,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks in the Chilean Sea,0.4023464024066925,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks in the Coral Sea,0.34839051961898804,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks in the East China Sea,0.3800666034221649,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks in the Gulf of Mexico,0.32333919405937195,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Shipwrecks in the Kara Sea,0.42764657735824585,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks in the Mediterranean Sea,0.4145340323448181,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Shipwrecks in the Mindanao Sea,0.3966200649738312,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks in the North Sea,0.4437061548233032,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks in the Norwegian Sea,0.44496241211891174,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks in the Persian Gulf,0.25781676173210144,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks in the Philippine Sea,0.43129175901412964,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks in the Red Sea,0.44204550981521606,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks in the Sea of Marmara,0.38302892446517944,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks in the Sea of Okhotsk,0.3627792298793793,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks in the Solent,0.43381211161613464,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks in the Yellow Sea,0.42094096541404724,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of Africa,0.37861716747283936,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks of Asia,0.42207133769989014,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks of Denmark,0.39924249053001404,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of England,0.45857366919517517,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks of Estonia,0.43146875500679016,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks of Finland,0.3975733816623688,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Shipwrecks of France,0.41662469506263733,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of Germany,0.41857603192329407,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of Greece,0.38575392961502075,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of Hong Kong,0.42379093170166016,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks of Ireland,0.45606356859207153,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks of Italy,0.41590023040771484,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of Malta,0.3868929147720337,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks of North America,0.41001957654953003,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks of Norway,0.4337412714958191,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks of Oceania,0.38597139716148376,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Shipwrecks of Poland,0.3925541639328003,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of Portugal,0.4391787648200989,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of Romania,0.3664078116416931,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks of Russia,0.4339267909526825,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks of Scotland,0.4492083191871643,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks of South America,0.40060144662857056,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Shipwrecks of Spain,0.44665151834487915,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of Sweden,0.44383344054222107,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of Switzerland,0.40151023864746094,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks of Turkey,0.35231539607048035,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Shipwrecks of Wales,0.4347764551639557,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks of the East River,0.4533193111419678,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the Falkland Islands,0.38396796584129333,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Shipwrecks of the Faroe Islands,0.35291799902915955,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the Isle of Man,0.36756575107574463,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Shipwrecks of the James River,0.4409005045890808,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the Mississippi River,0.4335341155529022,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the Missouri River,0.38519081473350525,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the Netherlands,0.44421154260635376,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the Ohio River,0.4362615644931793,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the Red River of the South,0.43326061964035034,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the River Mersey,0.4348539710044861,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the St. Johns River,0.428972065448761,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the United Kingdom,0.45476895570755005,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shipwrecks of the Yangtze,0.37587979435920715,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Shipwrecks of the Yazoo River,0.4004610776901245,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Shopping mall bombings,0.44808849692344666,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Sinking of the MS Estonia,0.45496195554733276,1,1,1,0,1,1,0,0,0,0,0,0,0
+Category:Sloops of the Continental Navy,0.36941418051719666,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Soviet nuclear test sites,0.4514368772506714,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Stadium collapses,0.4535215198993683,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Submarines sunk by aircraft,0.41490739583969116,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Submarines sunk by aircraft as targets,0.37668663263320923,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings by populated place,0.45632117986679077,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Suicide bombings by year,0.452484130859375,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Suicide bombings in 1980,0.45785999298095703,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 1982,0.440045565366745,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 1986,0.46059638261795044,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 1987,0.4444710910320282,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 1988,0.4515342712402344,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 1991,0.44976115226745605,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 1993,0.4582686424255371,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 1994,0.4512593448162079,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 1998,0.4457814693450928,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 1999,0.44805145263671875,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 2006,0.4538382887840271,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 2007,0.43711796402931213,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 2008,0.4297509789466858,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in 2009,0.4331691861152649,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Afghanistan,0.41565659642219543,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Africa,0.40428975224494934,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Africa by country,0.38691800832748413,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Argentina,0.40435221791267395,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Asia by country,0.44094035029411316,1,1,1,1,1,1,1,1,1,1,1,1,1
+"Category:Suicide bombings in Balochistan, Pakistan",0.401218056678772,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Bangladesh,0.40515804290771484,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Belgium,0.4062202572822571,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Bulgaria,0.39031991362571716,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in China,0.4531927704811096,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Europe by country,0.44273269176483154,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Suicide bombings in France,0.3967995345592499,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Germany,0.4587169587612152,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Suicide bombings in India,0.4523734748363495,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Indonesia,0.40942034125328064,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Iran,0.4388562738895416,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Suicide bombings in Jordan,0.40068385004997253,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Kazakhstan,0.41520461440086365,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Khyber Pakhtunkhwa,0.43355104327201843,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Kurdistan,0.38083571195602417,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Suicide bombings in Kuwait,0.3845449984073639,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Lebanon,0.4080803096294403,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Mali,0.35521432757377625,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Morocco,0.36877182126045227,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Suicide bombings in Nigeria,0.39533132314682007,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Oceania,0.42142796516418457,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Suicide bombings in Pakistan,0.42729583382606506,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Palestine,0.37965327501296997,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Suicide bombings in Russia,0.43635323643684387,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Saudi Arabia,0.44051316380500793,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Sindh,0.4038507640361786,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Somalia,0.41503724455833435,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in South America,0.41638097167015076,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Suicide bombings in Spain,0.4099801182746887,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Sri Lanka,0.371559202671051,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Sweden,0.4201822280883789,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Syria,0.3802509307861328,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Tel Aviv,0.3873129189014435,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Turkey,0.4036886990070343,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Uganda,0.3455255329608917,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Uzbekistan,0.4003153145313263,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in Yemen,0.40321144461631775,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in the 2010s,0.4601517617702484,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Suicide bombings in the 2020s,0.4168105721473694,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Suicide bombings in the Israeli–Palestinian conflict,0.40630850195884705,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide bombings in the North Caucasus,0.40776899456977844,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Suicide bombings in the Philippines,0.45093560218811035,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide by train in fiction,0.40972644090652466,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Suicide car and truck bombings in Africa,0.4575081467628479,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide car and truck bombings in Algeria,0.4413408041000366,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide car and truck bombings in Argentina,0.45852112770080566,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide car and truck bombings in Baghdad,0.43645814061164856,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide car and truck bombings in France,0.45984864234924316,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Suicide car and truck bombings in Nigeria,0.45030876994132996,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Suicide car and truck bombings in Sri Lanka,0.4503171443939209,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Suicide car and truck bombings in Syria,0.43302226066589355,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Sunken nuclear submarines,0.4149461090564728,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Survivors of the 2008 Mumbai attacks,0.4551036059856415,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Survivors of the 2011 Norway attacks,0.40101656317710876,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Survivors of the Rwandan genocide,0.3410146236419678,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Tailings dam failures,0.45459166169166565,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Taliban bombings in Kabul,0.38058143854141235,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorism deaths by country,0.42192041873931885,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorism deaths by organization,0.4155208468437195,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist attacks on airports by country,0.4002070128917694,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist attacks on airports in Asia,0.4191639721393585,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist attacks on airports in Europe,0.39928004145622253,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist attacks on airports in the United States,0.45938149094581604,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents against shipping,0.41774338483810425,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents against transport in Africa,0.45568645000457764,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents against transport in France,0.4516035318374634,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Terrorist incidents against transport in Iraq,0.431180864572525,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Terrorist incidents against transport in Kenya,0.4405316412448883,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents against transport in Turkey,0.440949946641922,1,1,1,0,1,1,0,1,1,0,1,1,0
+Category:Terrorist incidents attributed to Turkish militant groups,0.357994019985199,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Terrorist incidents by century and country,0.4577893614768982,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents by continent and decade,0.4430316984653473,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents by country and century,0.4570801854133606,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents by country and year,0.45796841382980347,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents by decade,0.4511069357395172,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents by decade and continent,0.4496782720088959,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents by political orientation,0.40575650334358215,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents by target,0.43153971433639526,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents by unknown perpetrators,0.4330741763114929,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Terrorist incidents by year,0.4460885226726532,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents by year and country,0.45702484250068665,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in 1984 by country,0.45985883474349976,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Aden,0.4203377962112427,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Afghanistan in 1995,0.41518786549568176,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Africa by city,0.40495777130126953,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Aleppo,0.40613797307014465,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Angola,0.35399845242500305,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Asia by century,0.441945344209671,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Asia by country,0.4601472318172455,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Asia by decade,0.4448852837085724,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Australia by decade,0.422608345746994,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Bangkok,0.3931155800819397,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in Bangladesh in 2001,0.3919838070869446,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Bangladesh in 2003,0.3845009505748749,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Belfast,0.41109785437583923,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in Bogotá,0.41318607330322266,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Bolivia,0.3640693426132202,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in Cardiff,0.43730854988098145,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in China by decade,0.42628780007362366,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in China in 2000,0.44165539741516113,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Colombo,0.3897230625152588,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Damascus,0.3908337950706482,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Djibouti,0.36978161334991455,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in El Salvador,0.364003449678421,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Europe by century,0.4293854832649231,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Europe by city,0.4553285241127014,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Terrorist incidents in Europe by country,0.45045962929725647,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Europe by decade,0.4334999918937683,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in France by perpetrator,0.39797505736351013,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in France in 1985,0.397336483001709,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in France in 1986,0.3961277902126312,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in France in 1995,0.3987416625022888,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in France in 1996,0.4054597318172455,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Gabon,0.3597871661186218,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Georgia (country),0.4140680730342865,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in Germany by decade,0.4368353486061096,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Germany by state,0.43333110213279724,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Terrorist incidents in Germany in 1985,0.45926299691200256,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Germany in 1986,0.45742854475975037,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Glasgow,0.45075058937072754,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in India by city,0.45453277230262756,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Terrorist incidents in India by decade,0.42861974239349365,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in India by state or union territory,0.43912723660469055,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Terrorist incidents in India in 1995,0.45886683464050293,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in India in 2001,0.4554983377456665,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Indonesia in 2000,0.40819957852363586,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Iran by decade,0.43206387758255005,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Iraq by city,0.4338340759277344,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Terrorist incidents in Iraq by decade,0.41369375586509705,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Israel by city,0.40161606669425964,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in Israel in 1995,0.3926592171192169,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Israel in 1996,0.398500919342041,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Israel in 2001,0.40456944704055786,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Israel in 2003,0.3989884555339813,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Ivory Coast,0.38934794068336487,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Jakarta,0.41055968403816223,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in Jamaica,0.3769039213657379,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Japan by decade,0.42563194036483765,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Japan in 1985,0.4420592784881592,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Japan in 1995,0.4503723382949829,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Japan in 2000,0.45137009024620056,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Kazakhstan,0.411969393491745,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Kyrgyzstan,0.39333784580230713,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in Lebanon in 1985,0.39596623182296753,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Lebanon in 2000,0.3943149149417877,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in London by decade,0.44139614701271057,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Los Angeles,0.4539172649383545,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Malaysia by decade,0.42649045586586,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Malaysia in 1985,0.4396275579929352,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Malaysia in 2000,0.44694581627845764,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Nepal,0.3800388276576996,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in New York City,0.44145411252975464,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in North America by country,0.4488905668258667,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in North America by decade,0.44171345233917236,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Oceania,0.4096643328666687,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Pakistan by city,0.4172652065753937,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Pakistan in 1986,0.4168352782726288,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Pakistan in 1995,0.41687026619911194,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Pakistan in 1996,0.4180153012275696,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Pakistan in 2001,0.4149318337440491,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Pakistan in 2003,0.41392844915390015,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Panama,0.3917732536792755,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in Russia in 1995,0.43098846077919006,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Russia in 1996,0.4389643371105194,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Rwanda,0.323086142539978,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Saudi Arabia in 1995,0.4178318679332733,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Saudi Arabia in 1996,0.42205947637557983,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Saudi Arabia in 2003,0.41395440697669983,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Scotland,0.4441549479961395,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in South America,0.41987717151641846,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Sri Lanka in 1985,0.3700270354747772,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Sri Lanka in 1986,0.3693276345729828,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Sri Lanka in 1995,0.37521401047706604,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Sri Lanka in 1996,0.3733123540878296,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Sri Lanka in 2000,0.36937952041625977,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Sri Lanka in 2001,0.3683682978153229,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Taiwan,0.40634945034980774,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in Tanzania,0.3969298303127289,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in Turkey in 1986,0.40929701924324036,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Turkey in 1996,0.40696269273757935,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Wales,0.43091902136802673,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Yemen in 2000,0.40326371788978577,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in Yemen in 2001,0.4028109312057495,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in the 1980s by continent,0.4595796763896942,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in the 1990s by continent,0.4535697400569916,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in the 1990s by country,0.4562239348888397,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in the Falkland Islands,0.41227400302886963,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Terrorist incidents in the Maldives,0.3664511442184448,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in the Philippines in 1995,0.43910354375839233,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in the Philippines in 2000,0.4361319839954376,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in the Philippines in 2001,0.43303555250167847,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in the Philippines in 2003,0.4339679777622223,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in the Sinai Peninsula,0.39431262016296387,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Terrorist incidents in the United Kingdom by decade,0.4503140151500702,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in the United States by decade,0.4360315203666687,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents in the United States by perpetrator,0.45628154277801514,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Terrorist incidents in the United States by state or territory,0.43974632024765015,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Terrorist incidents in the United States in 1988,0.4580646753311157,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents involving knife attacks,0.4498309791088104,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Terrorist incidents involving postal systems,0.41744354367256165,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Terrorist incidents involving vehicular attacks in Europe,0.4519725739955902,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents involving vehicular attacks in South America,0.454662561416626,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents on buses by country,0.4254910945892334,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents on buses in Asia,0.4518255889415741,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents on buses in Europe,0.42567306756973267,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Terrorist incidents on subterranean rapid transit,0.40602731704711914,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:The Station nightclub fire,0.35099920630455017,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Timelines of the September 11 attacks,0.4222317934036255,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Torpedo boats sunk by aircraft,0.4499044418334961,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Train and rapid transit fires in Canada,0.43383723497390747,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Train bombings in France,0.454819917678833,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Train collisions in Algeria,0.4535234868526459,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Train collisions in Czechoslovakia,0.4437152147293091,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Train collisions in Tunisia,0.4379189908504486,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Train collisions in Zimbabwe,0.45082420110702515,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Train robbers,0.3955336809158325,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Trident (UK nuclear programme),0.44779089093208313,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:U-boats sunk by US aircraft,0.4256151020526886,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:U-boats sunk in 1914,0.3924154043197632,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:U-boats sunk in 1915,0.379926472902298,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:U-boats sunk in 1916,0.36490726470947266,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:U-boats sunk in 1917,0.3896963596343994,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:U-boats sunk in 1918,0.3758455514907837,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:U-boats sunk in 1919,0.3523583710193634,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:U-boats sunk in 1920,0.37147343158721924,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:U-boats sunk in 1921,0.34951263666152954,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:U-boats sunk in 1946,0.3061574101448059,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:U-boats sunk in 1947,0.3161667287349701,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:U-boats sunk in collisions,0.45310381054878235,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Underground Railroad by state or territory,0.43224388360977173,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Underground Railroad locations,0.43311113119125366,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Underground Railroad locations in Canada,0.40051040053367615,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:United States Strategic Command,0.271402508020401,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:Urban fires in Africa,0.39299890398979187,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:Urban fires in Asia,0.40552958846092224,1,1,1,1,1,1,1,1,1,1,0,0,0
+Category:Urban fires in Europe,0.425982266664505,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Urban fires in North America,0.39909079670906067,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Vehicle fires by continent,0.3924098312854767,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Vehicle fires in Africa,0.36078429222106934,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:Victims of the Kyoto Animation arson attack,0.45089665055274963,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:War-related deaths by country,0.43233853578567505,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Water transport in World War I,0.3803248405456543,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Water transport in World War II,0.35338807106018066,1,1,0,0,1,0,0,1,0,0,0,0,0
+Category:Wikipedia categories named after terrorist incidents,0.4437045156955719,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:Works about the Emergency (India),0.4316318929195404,1,1,1,1,1,1,1,1,1,1,1,1,1
+Category:Works about the Underground Railroad,0.4349423348903656,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:Works about the atomic bombings of Hiroshima and Nagasaki,0.46053898334503174,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War I airfields,0.35949045419692993,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:World War I electronics,0.4191853404045105,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:World War I passenger ships of Austria-Hungary,0.3480873107910156,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:World War I passenger ships of France,0.38033702969551086,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War I passenger ships of Germany,0.3961774706840515,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War I passenger ships of Italy,0.3884235918521881,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War I passenger ships of Japan,0.3684343099594116,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War I passenger ships of Russia,0.402829110622406,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War I passenger ships of the United Kingdom,0.4436744749546051,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War I passenger ships of the United States,0.4062087833881378,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War I shipwrecks in the English Channel,0.4338703751564026,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War I vehicles,0.3238315284252167,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:World War II aerial warfare,0.2898789644241333,1,1,1,1,0,0,0,0,0,0,0,0,0
+Category:World War II airfields,0.35057532787323,1,1,0,0,0,0,0,0,0,0,0,0,0
+Category:World War II aviation films,0.45274829864501953,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War II electronics,0.39638400077819824,1,1,0,0,1,0,0,0,0,0,0,0,0
+Category:World War II grenades of Japan,0.43875613808631897,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War II jet aircraft,0.3682195544242859,1,1,1,1,1,1,1,0,0,0,0,0,0
+Category:World War II shipwrecks in the Irish Sea,0.44322848320007324,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War II shipwrecks in the Kattegat,0.4458163380622864,1,1,0,0,1,0,0,1,0,0,1,0,0
+Category:World War II vehicles,0.29379042983055115,1,1,0,0,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,13 @@
+experiment,sim_threshold,ratio_threshold,promoted,medium_to_high,low_to_medium
+sim060_ratio050,0.6,0.5,909,908,1
+sim060_ratio075,0.6,0.75,246,246,0
+sim060_ratio100,0.6,1.0,201,201,0
+sim070_ratio050,0.7,0.5,730,730,0
+sim070_ratio075,0.7,0.75,203,203,0
+sim070_ratio100,0.7,1.0,159,159,0
+sim075_ratio050,0.75,0.5,642,642,0
+sim075_ratio075,0.75,0.75,173,173,0
+sim075_ratio100,0.75,1.0,130,130,0
+sim080_ratio050,0.8,0.5,549,549,0
+sim080_ratio075,0.8,0.75,146,146,0
+sim080_ratio100,0.8,1.0,106,106,0
