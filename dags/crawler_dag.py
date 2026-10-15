@@ -43,5 +43,10 @@ with DAG(
         bash_command='python /opt/airflow/src/crawler.py',
     )
 
+#    run_fetcher_task = BashOperator(
+#        task_id='run_wikipedia_fetcher',
+#        bash_command='python /opt/airflow/src/fetcher.py',
+#    )
+
     # Ordem de execução
     [download_model_task, run_crawler_task] >> apply_filter_task

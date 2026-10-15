@@ -16,14 +16,14 @@ if os.path.exists("/opt/airflow"):
 else:
     DB_PATH = "/app/data/crawler.db"
     PROMOTED_PATH = "/app/data/promoted_categories.csv"
-    MODEL_PATH = Path("/app/data/models/all-MiniLM-L6-v2")
+    MODEL_PATH = Path("/app/models/all-MiniLM-L6-v2")
 
 TOPICS = [
-    "Aviation accidents and disasters",
-    "Industrial accidents and explosions",
-    "Engineering failures and structural collapses",
-    "Railway and maritime disasters",
-    "Human-caused environmental disasters",
+    #"Aviation accidents and disasters",
+    #"Industrial accidents and explosions",
+    #"Engineering failures and structural collapses",
+    #"Railway and maritime disasters",
+    #"Human-caused environmental disasters",
     "Technological and nuclear accidents"
 ]
 
@@ -181,28 +181,7 @@ def adjust_groups_with_graph(
 
         promotions.append((i, matching_parents, high_parent_ratio))
 
-    print("\nGraph filtering results")
-
-    for value, label in enumerate(labels):
-        before = np.count_nonzero(groups == value)
-        after = np.count_nonzero(new_groups == value)
-
-        print(
-            f"{label}: {before} -> {after} "
-            f"({after - before:+d})"
-        )
-
     print(f"Promoted categories: {len(promotions)}")
-
-    for i, matching_parents, ratio in promotions[:30]:
-        print(f"\n{categories[i]}")
-        print(f"\nSemantic score: {scores[i]:.3f}")
-        print(f"\nGroup: {labels[groups[i]]} -> {labels[new_groups[i]]}")
-        print(f"\nHIGH parent ratio: {ratio:.2f}")
-
-        for parent, similarity in matching_parents:
-            print(f"Parent: {parent}")
-            print(f"(similarity: {similarity:.3f})")
 
     promoted_csv(groups, new_groups, graph_categories, category_index, categories, scores)
 
@@ -320,6 +299,38 @@ def start_filtering():
         print(f"Threshold {threshold:.1f}: {count} categories")
 
     groups, new_groups = adjust_groups_with_graph(categories, scores, category_embeddings, threshold_high, threshold_low)
+
+    high_categories = [
+        categories[i]
+        for i in np.flatnonzero(new_groups == HIGH)
+    ]
+
+    print(len(high_categories))
+    with sqlite3.connect(DB_PATH) as conn:
+        placeholders = ",".join("?" * len(high_categories))
+        conn.execute("PRAGMA foreign_keys = ON")
+
+        articles = conn.execute(
+            f"""
+            SELECT DISTINCT page_id
+            FROM belongs_to b
+            WHERE category_name IN ({placeholders})
+            """,
+            high_categories
+        ).fetchall();
+
+        conn.executemany(
+            """
+            INSERT OR IGNORE INTO filtered_articles (page_id)
+            VALUES (?)
+            """,
+            articles
+        )
+
+        conn.commit()
+
+        print(len(articles))
+
 
 if __name__ == "__main__":
     start_filtering()

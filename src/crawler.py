@@ -101,6 +101,7 @@ def init_db():
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
     with sqlite3.connect(DB_PATH) as conn:
+        print(conn)
         conn.execute("PRAGMA foreign_keys = ON")
 
         conn.executescript("""
@@ -139,6 +140,15 @@ def init_db():
 
                 FOREIGN KEY (child_name)
                     REFERENCES categories(name)
+            );
+
+            DROP TABLE articles_filtred;
+
+            CREATE TABLE IF NOT EXISTS filtered_articles (
+                page_id INTEGER PRIMARY KEY,
+                status TEXT NOT NULL DEFAULT 'PENDING'
+                    CHECK(status IN ('PENDING', 'FETCHED', 'NORMALIZED')),
+                FOREIGN KEY (page_id) REFERENCES articles(page_id)
             );
         """)
 
