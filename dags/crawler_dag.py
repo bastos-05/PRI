@@ -66,5 +66,10 @@ with DAG(
         bash_command='python /opt/airflow/src/init_db.py',
     )
 
+    normalizer_task = BashOperator(
+        task_id='normalizer',
+        bash_command='python /opt/airflow/src/normalizer.py',
+    )
+
     # Ordem de execução
-    init_db_task >> [download_model_task, run_crawler_task] >> prepare_fetch_task >> apply_filter_task >> run_fetcher_task
+    init_db_task >> [download_model_task, run_crawler_task] >> prepare_fetch_task >> apply_filter_task >> run_fetcher_task >> normalizer_task

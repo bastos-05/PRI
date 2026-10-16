@@ -2,3 +2,4 @@ requests
 numpy
 sentence_transformers
 scikit-image
+mwparserfromhell
