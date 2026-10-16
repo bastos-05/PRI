@@ -8,7 +8,27 @@ LATEX: https://www.overleaf.com/1278562841tmsyzbzykhwz#cb4f79
 ### Templates
 https://www.acm.org/publications/authors/submissions
 
-Pipeline Config used
+## How to Run
+
+The data preparation pipeline is orchestrated using **Apache Airflow** and runs inside Docker containers.
+
+### 1. Start the pipeline
+
+Start the services using Docker Compose:
+
+```bash
+docker compose up -d --build
+```
+
+Access the Airflow web interface at the address configured in `docker-compose.yml`.
+
+### 2. Trigger the DAG
+
+In the Airflow interface, locate the data preparation DAG and select **Trigger DAG**.
+
+Use the following configuration, which corresponds to the final dataset used for **Milestone 1**:
+
+```json
 {
   "mode": "fresh",
   "crawler": {
@@ -30,7 +50,7 @@ Pipeline Config used
     ],
     "graph": {
       "min_parent_child_similarity": 0.6,
-      "min_high_parent_ratio": 1
+      "min_high_parent_ratio": 1.0
     }
   },
   "fetch": {
@@ -38,3 +58,10 @@ Pipeline Config used
     "batch_size": 20
   }
 }
+```
+
+### 3. Execution modes
+
+The `mode` parameter controls how existing data is handled:
+
+- **`fresh`** — Rebuilds the
