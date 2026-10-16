@@ -1,10 +1,10 @@
-
 import requests
 import time
 import datetime
 import threading
 import sqlite3
 import os
+import json
 
 import csv
 from queue import Queue
@@ -17,10 +17,27 @@ if os.path.exists("/opt/airflow"):
 else:
     DB_PATH = "/app/data/crawler.db"
 
+DEFAULT_MAX_DEPTH = 2
+DEFAULT_WORKERS = 3
+
+def get_crawler_config():
+    config = json.loads(os.environ.get("PIPELINE_CONFIG") or "{}")
+    crawler = config.get("crawler") or {}
+
+    max_depth = int(crawler.get("max_depth", DEFAULT_MAX_DEPTH))
+    workers = int(crawler.get("workers", DEFAULT_WORKERS))
+
+    if max_depth < 0:
+        raise ValueError("max_depth must be >= 0")
+
+    if workers < 1:
+        raise ValueError("workers must be >= 1")
+
+    return max_depth, workers
+
 request_lock = threading.Lock()
 state_lock = threading.Lock()
 next_request_time = 0.0
-workers = 3
 
 def get_members(session, category):
     global next_request_time
@@ -96,63 +113,7 @@ def get_members(session, category):
 
         params.update(data["continue"])
 
-
-def init_db():
-    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
-
-    with sqlite3.connect(DB_PATH) as conn:
-        print(conn)
-        conn.execute("PRAGMA foreign_keys = ON")
-
-        conn.executescript("""
-            CREATE TABLE IF NOT EXISTS articles (
-                page_id INTEGER PRIMARY KEY,
-                title TEXT NOT NULL
-            );
-
-            CREATE TABLE IF NOT EXISTS categories (
-                name TEXT PRIMARY KEY,
-                processed BOOLEAN NOT NULL DEFAULT 0,
-                depth INTEGER NOT NULL
-            );
-
-            CREATE TABLE IF NOT EXISTS belongs_to (
-                page_id INTEGER NOT NULL,
-                category_name TEXT NOT NULL,
-
-                PRIMARY KEY (page_id, category_name),
-
-                FOREIGN KEY (page_id)
-                    REFERENCES articles(page_id),
-
-                FOREIGN KEY (category_name)
-                    REFERENCES categories(name)
-            );
-
-            CREATE TABLE IF NOT EXISTS category_edges (
-                parent_name TEXT NOT NULL,
-                child_name TEXT NOT NULL,
-
-                PRIMARY KEY (parent_name, child_name),
-
-                FOREIGN KEY (parent_name)
-                    REFERENCES categories(name),
-
-                FOREIGN KEY (child_name)
-                    REFERENCES categories(name)
-            );
-
-            DROP TABLE articles_filtred;
-
-            CREATE TABLE IF NOT EXISTS filtered_articles (
-                page_id INTEGER PRIMARY KEY,
-                status TEXT NOT NULL DEFAULT 'PENDING'
-                    CHECK(status IN ('PENDING', 'FETCHED', 'NORMALIZED')),
-                FOREIGN KEY (page_id) REFERENCES articles(page_id)
-            );
-        """)
-
-def crawl_category(root, max_depth=2):
+def crawl_category(root, workers, max_depth=2):
     crawler_queue = Queue()
 
     with sqlite3.connect(DB_PATH) as conn:
@@ -441,21 +402,15 @@ def crawl_category(root, max_depth=2):
     return list(articles.values())
 
 def crawler():
+    max_depth, workers = get_crawler_config()
 
     print(f"[START] Crawler using {workers} Threads (Workers)", flush=True)
     start = time.perf_counter()
-
-    ct = datetime.datetime.now()
-    foldername = f"crawl-{ct}"
-
-    if not os.path.exists(foldername):
-        os.makedirs(foldername)
-
-    init_db()
     
     articles = crawl_category(
         "Category:Man-made disasters",
-        max_depth=8
+        max_depth=max_depth,
+        workers = workers
     )
 
     elapsed = time.perf_counter() - start

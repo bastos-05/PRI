@@ -21,13 +21,15 @@ with DAG(
     tags=['pri', 'crawler', 'wikipedia', 'embeddings'],
 ) as dag:
 
+    pipeline_env = {
+        "PIPELINE_CONFIG": "{{ dag_run.conf | default({}, true) | tojson }}"
+    }
+
     # Tarefa para aplicar o filtro
     apply_filter_task = BashOperator(
         task_id='apply_filter_task',
         bash_command='python /opt/airflow/src/embeddings_filter.py',
-        env={
-            "FILTER_CONFIG": "{{ dag_run.conf | tojson }}"
-        },
+        env=pipeline_env,
         append_env=True,
     )
 
@@ -39,14 +41,30 @@ with DAG(
 
     # correr o Crawler (apenas processa o que restou pendente)
     run_crawler_task = BashOperator(
-        task_id='run_wikipedia_crawler',
+        task_id='run_crawler',
         bash_command='python /opt/airflow/src/crawler.py',
+        env=pipeline_env,
+        append_env=True,
     )
 
-#    run_fetcher_task = BashOperator(
-#        task_id='run_wikipedia_fetcher',
-#        bash_command='python /opt/airflow/src/fetcher.py',
-#    )
+    run_fetcher_task = BashOperator(
+        task_id='run_fetcher',
+        bash_command='python /opt/airflow/src/fetcher.py',
+        env=pipeline_env,
+        append_env=True,
+    )
+
+    prepare_fetch_task = BashOperator(
+        task_id='run_prepare_fetcher',
+        bash_command='python /opt/airflow/src/prepare_fetch.py',
+        env=pipeline_env,
+        append_env=True,
+    )
+
+    init_db_task = BashOperator(
+        task_id='init_db',
+        bash_command='python /opt/airflow/src/init_db.py',
+    )
 
     # Ordem de execução
-    [download_model_task, run_crawler_task] >> apply_filter_task
+    init_db_task >> [download_model_task, run_crawler_task] >> prepare_fetch_task >> apply_filter_task >> run_fetcher_task

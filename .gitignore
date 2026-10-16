@@ -7,3 +7,5 @@ src/*.csv
 models/
 data/crawler.backup.db
 data/crawler.backup.faulty.db
+data/raw.jsonl
+data/promoted_categories.csv

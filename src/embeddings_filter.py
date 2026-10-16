@@ -19,12 +19,12 @@ else:
     MODEL_PATH = Path("/app/models/all-MiniLM-L6-v2")
 
 TOPICS = [
-    #"Aviation accidents and disasters",
-    #"Industrial accidents and explosions",
-    #"Engineering failures and structural collapses",
-    #"Railway and maritime disasters",
-    #"Human-caused environmental disasters",
-    "Technological and nuclear accidents"
+    "Industrial disasters",
+    "Structural failures",
+    "Nuclear accidents",
+    "Maritime disasters",
+    "Aviation accidents",
+    "Natural disasters affecting infrastructure"
 ]
 
 # Tags para cada grupo
@@ -35,8 +35,8 @@ MIN_PARENT_CHILD_SIM = 0.6
 MIN_HIGH_PARENT_RATIO = 1.0
 
 def get_filter_config():
-    config = json.loads(os.environ.get("FILTER_CONFIG") or "{}")
-
+    config = json.loads(os.environ.get("PIPELINE_CONFIG") or "{}").get('filter') or {}
+    
     graph = config.get("graph") or {}
 
     return {
@@ -181,7 +181,7 @@ def adjust_groups_with_graph(
 
         promotions.append((i, matching_parents, high_parent_ratio))
 
-    print(f"Promoted categories: {len(promotions)}")
+    print(f"Promoted categories: {len(promotions)}", flush=True)
 
     promoted_csv(groups, new_groups, graph_categories, category_index, categories, scores)
 
@@ -250,35 +250,38 @@ def start_filtering():
 
     ranking = np.argsort(scores)[::-1]
 
-    print(f"\nTop 30 categories (Total {len(scores)}):")
+    print(f"\nTop 30 categories (Total {len(scores)}):", flush=True)
     for i in ranking[:30]:
         print(
             f"{scores[i]:.4f} | "
             f"{categories[i]} | "
-            f"{topics[similarities[i].argmax()]}"
+            f"{topics[similarities[i].argmax()]}",
+            flush=True
         )
 
-    print(f"\nLast 30 categories (Total {len(scores)}):")
+    print(f"\nLast 30 categories (Total {len(scores)}):", flush=True)
     for i in ranking[(len(scores)-30):]:
         print(
             f"{scores[i]:.4f} | "
             f"{categories[i]} | "
-            f"{topics[similarities[i].argmax()]}"
+            f"{topics[similarities[i].argmax()]}",
+            flush=True
         )
 
-    print("Score statistics")
+    print("Score statistics", flush=True)
 
     for p in [0, 10, 25, 50, 75, 90, 95, 99, 100]:
         print(
-            f"P{p}: {np.percentile(scores, p):.4f}"
+            f"P{p}: {np.percentile(scores, p):.4f}",
+            flush=True
         )
     
     (threshold_low, threshold_high), (p_low, p_high) = (
         automatic_percentiles(scores)
     )
 
-    print(f"Lower threshold: {threshold_low:.4f} (P{p_low:.1f})")
-    print(f"Upper threshold: {threshold_high:.4f} (P{p_high:.1f})")
+    print(f"Lower threshold: {threshold_low:.4f} (P{p_low:.1f})", flush=True)
+    print(f"Upper threshold: {threshold_high:.4f} (P{p_high:.1f})", flush=True)
 
     low = scores < threshold_low
 
@@ -289,14 +292,14 @@ def start_filtering():
 
     high = scores >= threshold_high
 
-    print("Low:", np.count_nonzero(low))
-    print("Medium:", np.count_nonzero(medium))
-    print("High:", np.count_nonzero(high))
+    print("Low:", np.count_nonzero(low), flush=True)
+    print("Medium:", np.count_nonzero(medium), flush=True)
+    print("High:", np.count_nonzero(high), flush=True)
 
     # testar tresholds
     for threshold in [0.4, 0.5, 0.6, 0.7, 0.8]:
         count = np.count_nonzero(scores >= threshold)
-        print(f"Threshold {threshold:.1f}: {count} categories")
+        print(f"Threshold {threshold:.1f}: {count} categories", flush=True)
 
     groups, new_groups = adjust_groups_with_graph(categories, scores, category_embeddings, threshold_high, threshold_low)
 
@@ -305,7 +308,7 @@ def start_filtering():
         for i in np.flatnonzero(new_groups == HIGH)
     ]
 
-    print(len(high_categories))
+    print(f"[HIGH CATEGORIES] {len(high_categories)}", flush=True)
     with sqlite3.connect(DB_PATH) as conn:
         placeholders = ",".join("?" * len(high_categories))
         conn.execute("PRAGMA foreign_keys = ON")
@@ -329,7 +332,7 @@ def start_filtering():
 
         conn.commit()
 
-        print(len(articles))
+        print(f"[ARTICLES] {len(articles)}", flush=True)
 
 
 if __name__ == "__main__":
