@@ -8,7 +8,7 @@ LATEX: https://www.overleaf.com/1278562841tmsyzbzykhwz#cb4f79
 ### Templates
 https://www.acm.org/publications/authors/submissions
 
-Pipeline Config example
+Pipeline Config used
 {
   "mode": "fresh",
   "crawler": {
