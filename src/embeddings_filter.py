@@ -26,7 +26,6 @@ TOPICS = [
     "Aviation accidents",
     "Natural disasters affecting infrastructure"
 ]
-
 # Tags para cada grupo
 LOW = 0
 MEDIUM = 1
