@@ -11,7 +11,7 @@ if os.path.exists("/opt/airflow"):
 else:
     DATA_PATH = Path("/app/data")
 
-RAW_PATH = DATA_PATH / "raw.jsonl"
+RAW_PATH = DATA_PATH / "enriched.jsonl"
 FINAL_PATH = DATA_PATH / "final.jsonl"
 DB_PATH = DATA_PATH / "crawler.db"
 
@@ -112,6 +112,8 @@ def normalize():
                 "revision_id": article["revision_id"],
                 "text": text
             }
+            document["wikidata_id"] = article.get("wikidata_id")
+            document["metadata"] = article.get("metadata", {})
 
             destination.write(
                 json.dumps(document, ensure_ascii=False) + "\n"

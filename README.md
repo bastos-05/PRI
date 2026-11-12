@@ -1,5 +1,7 @@
 # PRI
 
+Metadata enrichment: [Wikidata and Wikipedia infoboxes](docs/metadata.md).
+
 ### REPORT
 DOCX: https://docs.google.com/document/d/1EBQbp5Je-pxeZXom9qd25TjW5JFVIDhudJZfHjO6MJQ/edit?usp=sharing
 <br>

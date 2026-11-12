@@ -71,5 +71,12 @@ with DAG(
         bash_command='python /opt/airflow/src/normalizer.py',
     )
 
+    enrich_metadata_task = BashOperator(
+        task_id='enrich_metadata',
+        bash_command='python /opt/airflow/src/enrich_metadata.py',
+        env=pipeline_env,
+        append_env=True,
+    )
+
     # Ordem de execução
-    init_db_task >> [download_model_task, run_crawler_task] >> prepare_fetch_task >> apply_filter_task >> run_fetcher_task >> normalizer_task
+    init_db_task >> [download_model_task, run_crawler_task] >> prepare_fetch_task >> apply_filter_task >> run_fetcher_task >> enrich_metadata_task >> normalizer_task
