@@ -66,6 +66,7 @@ def save_articles(articles):
                     "page_id": article["pageid"],
                     "title": article["title"],
                     "revision_id": revision["revid"],
+                    "wikidata_id": article.get("pageprops", {}).get("wikibase_item"),
                     "wikitext": revision["slots"]["main"]["content"]
                 }
 
@@ -97,7 +98,8 @@ def fetch_articles(page_ids, session):
 
     params = {
         "action": "query",
-        "prop": "revisions",
+        "prop": "revisions|pageprops",
+        "ppprop": "wikibase_item",
         "pageids": "|".join(map(str, page_ids)),
         "rvprop": "ids|timestamp|content",
         "rvslots": "main",
