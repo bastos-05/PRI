@@ -60,6 +60,39 @@ Use the following configuration, which corresponds to the final dataset used for
 }
 ```
 
+### Solr (Milestone 2)
+
+Solr runs as a separate Docker Compose service so it can be started without
+starting the Airflow pipeline:
+
+```powershell
+docker compose -f solr-compose.yaml -p pri-solr up -d
+docker compose -f solr-compose.yaml -p pri-solr ps
+```
+
+Open the Solr UI at <http://localhost:8983/solr/>. The `pri` core is created
+with Solr's default configset. Its index data is stored in a named Docker
+volume and remains available after stopping the service.
+
+Configure the project document fields after starting Solr:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\solr\configure-schema.ps1
+```
+
+The schema includes `page_id`, `revision_id`, `title`, and `text`. Solr's
+default unique key is `id`; when sending project documents to Solr, set `id`
+to the document's `page_id` as a string as well as sending `page_id`.
+
+Stop Solr without deleting its index:
+
+```powershell
+docker compose -f solr-compose.yaml -p pri-solr down
+```
+
+Do not add `-v` to the `down` command unless you intend to delete the Solr
+index and its persisted data.
+
 ### 3. Execution modes
 
 The `mode` parameter controls how existing data is handled:
