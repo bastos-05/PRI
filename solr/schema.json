@@ -1,0 +1,35 @@
+{
+  "add-field-type": [
+    {
+      "name": "text_en_pri",
+      "class": "solr.TextField",
+      "positionIncrementGap": "100",
+      "analyzer": {
+        "tokenizer": {"class": "solr.StandardTokenizerFactory"},
+        "filters": [
+          {"class": "solr.EnglishPossessiveFilterFactory"},
+          {"class": "solr.ASCIIFoldingFilterFactory", "preserveOriginal": true},
+          {"class": "solr.LowerCaseFilterFactory"},
+          {"class": "solr.StopFilterFactory", "words": "lang/stopwords_en.txt", "ignoreCase": true},
+          {"class": "solr.PorterStemFilterFactory"}
+        ]
+      }
+    }
+  ],
+  "add-field": [
+    {"name": "page_id", "type": "plong", "stored": true, "indexed": true, "multiValued": false},
+    {"name": "revision_id", "type": "plong", "stored": true, "indexed": false, "multiValued": false},
+    {"name": "title", "type": "text_general", "stored": true, "indexed": true, "multiValued": false},
+    {"name": "text", "type": "text_general", "stored": true, "indexed": true, "multiValued": false},
+    {"name": "wikidata_id", "type": "string", "stored": true, "indexed": true},
+    {"name": "title_en", "type": "text_en_pri", "stored": false, "indexed": true},
+    {"name": "text_en", "type": "text_en_pri", "stored": false, "indexed": true},
+    {"name": "location", "type": "text_general", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "year", "type": "pint", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "deaths", "type": "pint", "stored": true, "indexed": true}
+  ],
+  "add-copy-field": [
+    {"source": "title", "dest": "title_en"},
+    {"source": "text", "dest": "text_en"}
+  ]
+}

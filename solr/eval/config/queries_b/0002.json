@@ -1,0 +1,11 @@
+{
+    "query": "transport disasters involving human error",
+    "fields": "id, title, score",
+    "limit": 20,
+    "params": {
+        "defType": "edismax",
+        "qf": "title_en^5 text_en",
+        "pf": "title_en^10 text_en^3",
+        "ps": "3"
+    }
+}

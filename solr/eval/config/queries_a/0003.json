@@ -1,0 +1,12 @@
+{
+    "query": "industrial accidents in India",
+    "fields": "id, title, score",
+    "limit": 20,
+    "params": {
+        "defType": "edismax",
+        "qf": "title text"
+    },
+    "filter": [
+        "year:[1980 TO 2000]"
+    ]
+}

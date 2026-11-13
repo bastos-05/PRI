@@ -1,0 +1,9 @@
+{
+    "query": "Bhopal disaster causes and consequences",
+    "fields": "id, title, score",
+    "limit": 20,
+    "params": {
+        "defType": "edismax",
+        "qf": "title text"
+    }
+}
