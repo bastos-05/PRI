@@ -337,6 +337,21 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
+  solr:
+    image: solr:10
+    command: ["solr-precreate", "pri"]
+    ports:
+      - "8983:8983"
+    volumes:
+      - solr10-data:/var/solr
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail --silent http://localhost:8983/solr/admin/info/system >/dev/null || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    
 volumes:
   postgres-db-volume:
-
+  solr10-data:
