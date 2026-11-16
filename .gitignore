@@ -8,6 +8,7 @@ models/
 data/crawler.backup.db
 data/crawler.backup.faulty.db
 data/*.jsonl
+!data/final.jsonl
 data/promoted_categories.csv
 data/metadata_cache.db
 data/enriched.jsonl.tmp

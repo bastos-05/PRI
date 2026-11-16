@@ -1,6 +1,11 @@
 {
   "add-field-type": [
     {
+      "name": "location_point",
+      "class": "solr.LatLonPointSpatialField",
+      "docValues": true
+    },
+    {
       "name": "text_en_pri",
       "class": "solr.TextField",
       "positionIncrementGap": "100",
@@ -25,8 +30,23 @@
     {"name": "title_en", "type": "text_en_pri", "stored": false, "indexed": true},
     {"name": "text_en", "type": "text_en_pri", "stored": false, "indexed": true},
     {"name": "location", "type": "text_general", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "location_id", "type": "string", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "coordinates", "type": "location_point", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "date", "type": "text_general", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "start_date", "type": "text_general", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "end_date", "type": "text_general", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "date_year", "type": "pint", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "start_date_year", "type": "pint", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "end_date_year", "type": "pint", "stored": true, "indexed": true, "multiValued": true},
     {"name": "year", "type": "pint", "stored": true, "indexed": true, "multiValued": true},
-    {"name": "deaths", "type": "pint", "stored": true, "indexed": true}
+    {"name": "deaths", "type": "pint", "stored": true, "indexed": true},
+    {"name": "injured", "type": "pint", "stored": true, "indexed": true, "multiValued": false, "docValues": true},
+    {"name": "missing", "type": "pint", "stored": true, "indexed": true, "multiValued": false, "docValues": true},
+    {"name": "deaths_text", "type": "text_general", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "injured_text", "type": "text_general", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "missing_text", "type": "text_general", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "casualties", "type": "text_general", "stored": true, "indexed": true, "multiValued": true},
+    {"name": "damages", "type": "text_general", "stored": true, "indexed": true, "multiValued": true}
   ],
   "add-copy-field": [
     {"source": "title", "dest": "title_en"},
