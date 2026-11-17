@@ -4,8 +4,8 @@
     "limit": 20,
     "params": {
         "defType": "edismax",
-        "qf": "title_en^5 text_en",
-        "pf": "title_en^10 text_en^3",
-        "ps": "3"
+        "qf": "title_en^1.5 text_en",
+        "pf": "text_en^2",
+        "mm": "75%"
     }
 }
