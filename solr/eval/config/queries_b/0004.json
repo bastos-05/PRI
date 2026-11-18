@@ -1,5 +1,5 @@
 {
-    "query": "railway accidents with recommendations on signalling",
+    "query": "Which dams failed and flooded towns or villages downstream?",
     "fields": "id, title, score",
     "limit": 20,
     "params": {

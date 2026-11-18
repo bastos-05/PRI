@@ -1,5 +1,5 @@
 {
-    "query": "Bhopal disaster causes and consequences",
+    "query": "Which bridges collapsed while they were still under construction?",
     "fields": "id, title, score",
     "limit": 20,
     "params": {

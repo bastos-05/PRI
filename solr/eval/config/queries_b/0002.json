@@ -1,5 +1,5 @@
 {
-    "query": "transport disasters involving human error",
+    "query": "Which train crashes were caused by signalling failures?",
     "fields": "id, title, score",
     "limit": 20,
     "params": {

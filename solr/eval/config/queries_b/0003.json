@@ -1,5 +1,5 @@
 {
-    "query": "industrial accidents in India",
+    "query": "What major oil spills happened between 1980 and 2000?",
     "fields": "id, title, score",
     "limit": 20,
     "params": {
