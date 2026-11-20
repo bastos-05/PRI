@@ -86,8 +86,7 @@ solr-judge: venv
 		b-final)   set -- --run "B_final=$(QUERIES_B_FINAL)" ;; \
 		b-and)       set -- --run "B_AND=$(QUERIES_B_AND)" ;; \
 		b-compare)   set -- --run "B_final=$(QUERIES_B_FINAL)/0005.json" --run "B_AND=$(QUERIES_B_AND)" ;; \
-		*)         echo "CONFIG inválida. Usa all, a, b-inicial, b-and, b-compare
-		 ou b-final." >&2; exit 2 ;; \
+		*)         echo "CONFIG inválida. Usa all, a, b-inicial, b-and, b-compare ou b-final." >&2; exit 2 ;; \
 	esac; \
 	if [ -f "$(STATE)" ]; then \
 		"$(PYTHON)" "$(JUDGE_SCRIPT)" --state "$(STATE)"; \
