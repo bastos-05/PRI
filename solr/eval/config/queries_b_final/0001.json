@@ -1,11 +1,11 @@
 {
-    "query": "Which dams failed and flooded towns or villages downstream?",
+    "query": "Which bridges collapsed while they were still under construction?",
     "fields": "id, title, score",
     "limit": 20,
     "params": {
         "defType": "edismax",
         "qf": "title_en^1.5 text_en",
         "pf2": "text_en^2",
-        "ps2": "2"
+        "ps2": 2
     }
 }

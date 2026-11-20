@@ -1,0 +1,14 @@
+{
+  "query": "What major oil spills happened between 1980 and 2000?",
+  "fields": "id, title, score",
+  "limit": 20,
+  "params": {
+    "defType": "edismax",
+    "qf": "title_en^1.5 text_en",
+    "pf": "text_en^2",
+    "mm": "75%"
+  },
+  "filter": [
+    "year:[1980 TO 2000]"
+  ]
+}
