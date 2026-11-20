@@ -1,5 +1,6 @@
 """Pool the top results of every setup for every query into one CSV for manual judging.
 overrides `fields` (adds text) and `limit`, and writes solr/eval/judgments.csv.
+Pass `--qrels` to export relevant doc_ids (1 or 2) from judgments.csv to config/qrels/.
 """
 import csv
 import json
@@ -8,10 +9,26 @@ import urllib.request
 from pathlib import Path
 
 CORE = "http://127.0.0.1:8983/solr/pri/select"
-ROWS = int(sys.argv[1]) if len(sys.argv) > 1 else 20 # how many results to take per query and setup
 SNIPPET = 400
 CONFIG = Path(__file__).parent / "eval" / "config"
-OUT = Path(__file__).parent / "eval" / "judgments.csv" 
+OUT = Path(__file__).parent / "eval" / "judgments.csv"
+
+if "--qrels" in sys.argv:
+    with OUT.open("r", newline="", encoding="utf-8-sig") as f:
+        rows = list(csv.DictReader(f))
+    (CONFIG / "qrels").mkdir(parents=True, exist_ok=True)
+    for qid in sorted({r["query_id"] for r in rows}):
+        rel = [r["doc_id"] for r in rows if r["query_id"] == qid and r["relevance"].strip() in ("1", "2")]
+        (CONFIG / "qrels" / f"{qid}.txt").write_text("\n".join(rel) + ("\n" if rel else ""), encoding="utf-8")
+        print(f"{qid}.txt: {len(rel)} relevant docs")
+    raise SystemExit(0)
+
+ROWS = int(sys.argv[1]) if len(sys.argv) > 1 else 20
+
+existing = {}
+if OUT.exists():
+    with OUT.open("r", newline="", encoding="utf-8-sig") as f:
+        existing = {(r["query_id"], r["doc_id"]): r for r in csv.DictReader(f) if r.get("relevance", "").strip()}
 
 setups = sorted(d for d in CONFIG.glob("queries_*") if d.is_dir())
 names = [d.name.split("_", 1)[1].upper() for d in setups]
@@ -44,12 +61,18 @@ for qid in query_ids:
                 "url": f"https://en.wikipedia.org/?curid={d['id']}",
                 "snippet": " ".join(d.get("text", "").split())[:SNIPPET],
                 **{f"rank_{n}": "" for n in names},
-                "relevance": "",
+                "relevance": existing.get((qid, str(d["id"])), {}).get("relevance", ""),
             })
             entry[f"rank_{name}"] = rank
+    for (q, pid), prev in existing.items():
+        if q == qid and pid not in pool:
+            pool[pid] = {**prev, **{f"rank_{n}": "" for n in names}}
     rows.extend(sorted(pool.values(), key=lambda e: min(
         (e[f"rank_{n}"] for n in names if e[f"rank_{n}"] != ""), default=999)))
     print(f"{qid}: {len(pool)} unique documents | {query_text}")
+
+if not rows:
+    raise SystemExit("No results returned from Solr; keeping existing CSV.")
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
 with OUT.open("w", newline="", encoding="utf-8-sig") as f:

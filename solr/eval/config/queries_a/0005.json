@@ -1,0 +1,9 @@
+{
+    "query": "Which train crashes were caused by bridge collapses?",
+    "fields": "id, title, score",
+    "limit": 20,
+    "params": {
+        "defType": "edismax",
+        "qf": "title text"
+    }
+}
