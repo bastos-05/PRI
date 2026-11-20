@@ -1,0 +1,123 @@
+{
+  "request": {
+    "query": "What major oil spills happened between 1980 and 2000?",
+    "fields": "id, title, score",
+    "limit": 20,
+    "params": {
+      "defType": "edismax",
+      "qf": "title_en^1.5 text_en",
+      "pf": "text_en^2"
+    },
+    "filter": [
+      "year:[1980 TO 2000]"
+    ]
+  },
+  "response": {
+    "numFound": 1084,
+    "start": 0,
+    "maxScore": 10.170624,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "41672392",
+        "title": "Tanio oil spill",
+        "score": 10.170624
+      },
+      {
+        "id": "10243",
+        "title": "Exxon Valdez oil spill",
+        "score": 9.474021
+      },
+      {
+        "id": "17448",
+        "title": "Kuwaiti oil fires",
+        "score": 8.896052
+      },
+      {
+        "id": "39030239",
+        "title": "1980 Moradabad riots",
+        "score": 8.69342
+      },
+      {
+        "id": "1530406",
+        "title": "Gulf War oil spill",
+        "score": 8.039653
+      },
+      {
+        "id": "36053950",
+        "title": "1997 Guanabara Bay oil spill",
+        "score": 7.976725
+      },
+      {
+        "id": "43583260",
+        "title": "Castillo de Bellver oil spill",
+        "score": 7.532727
+      },
+      {
+        "id": "67834629",
+        "title": "Line 3 oil spill",
+        "score": 7.425235
+      },
+      {
+        "id": "28107927",
+        "title": "Sandoz chemical spill",
+        "score": 7.051633
+      },
+      {
+        "id": "3876676",
+        "title": "1980 Miami riots",
+        "score": 6.7477074
+      },
+      {
+        "id": "34106536",
+        "title": "Karlino oil eruption",
+        "score": 6.6689553
+      },
+      {
+        "id": "72767965",
+        "title": "September 1980 Iraqi airstrikes on Iran",
+        "score": 6.610689
+      },
+      {
+        "id": "8250213",
+        "title": "Martin County coal slurry spill",
+        "score": 6.4854183
+      },
+      {
+        "id": "41397004",
+        "title": "1980 Soviet nuclear tests",
+        "score": 6.384923
+      },
+      {
+        "id": "4848748",
+        "title": "Yaoundé train explosion",
+        "score": 6.1827717
+      },
+      {
+        "id": "69272266",
+        "title": "West Nile campaign (October 1980)",
+        "score": 6.1792383
+      },
+      {
+        "id": "16909192",
+        "title": "Wrawby Junction rail crash",
+        "score": 6.04647
+      },
+      {
+        "id": "55792709",
+        "title": "Clementi rail accident",
+        "score": 5.923345
+      },
+      {
+        "id": "612757",
+        "title": "Piper Alpha",
+        "score": 5.869958
+      },
+      {
+        "id": "78116087",
+        "title": "June 1980 West Bank bombings",
+        "score": 5.783753
+      }
+    ]
+  }
+}

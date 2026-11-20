@@ -1,5 +1,6 @@
 """Pool the top results of every setup for every query into one CSV for manual judging.
 overrides `fields` (adds text) and `limit`, and writes solr/eval/judgments.csv.
+Pass `--qrels` to export relevant doc_ids (1 or 2) from judgments.csv to config/qrels/.
 """
 import csv
 import json
@@ -8,10 +9,21 @@ import urllib.request
 from pathlib import Path
 
 CORE = "http://127.0.0.1:8983/solr/pri/select"
-ROWS = int(sys.argv[1]) if len(sys.argv) > 1 else 20 # how many results to take per query and setup
 SNIPPET = 400
 CONFIG = Path(__file__).parent / "eval" / "config"
-OUT = Path(__file__).parent / "eval" / "judgments.csv" 
+OUT = Path(__file__).parent / "eval" / "judgments.csv"
+
+if "--qrels" in sys.argv:
+    with OUT.open("r", newline="", encoding="utf-8-sig") as f:
+        rows = list(csv.DictReader(f))
+    (CONFIG / "qrels").mkdir(parents=True, exist_ok=True)
+    for qid in sorted({r["query_id"] for r in rows}):
+        rel = [r["doc_id"] for r in rows if r["query_id"] == qid and r["relevance"].strip() in ("1", "2")]
+        (CONFIG / "qrels" / f"{qid}.txt").write_text("\n".join(rel) + ("\n" if rel else ""), encoding="utf-8")
+        print(f"{qid}.txt: {len(rel)} relevant docs")
+    raise SystemExit(0)
+
+ROWS = int(sys.argv[1]) if len(sys.argv) > 1 else 20 # how many results to take per query and setup
 
 setups = sorted(d for d in CONFIG.glob("queries_*") if d.is_dir())
 names = [d.name.split("_", 1)[1].upper() for d in setups]

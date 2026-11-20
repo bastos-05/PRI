@@ -1,0 +1,11 @@
+{
+  "query": "(train OR railway OR rail) AND (crash OR derailment OR accident) AND bridge AND collapse",
+  "fields": "id,title,text",
+  "limit": 20,
+  "params": {
+    "defType": "edismax",
+    "qf": "title_en^1.5 text_en",
+    "pf2": "text_en^2",
+    "ps2": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "query": "Which dams failed and flooded towns or villages downstream?",
+  "fields": "id, title, score",
+  "limit": 20,
+  "params": {
+    "defType": "edismax",
+    "qf": "title_en^1.5 text_en",
+    "pf": "text_en^2",
+    "mm": "75%"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "request": {
+    "query": "What major oil spills happened between 1980 and 2000?",
+    "fields": "id, title, score",
+    "limit": 20,
+    "params": {
+      "defType": "edismax",
+      "qf": "title_en^1.5 text_en",
+      "pf": "text_en^2",
+      "mm": "75%"
+    },
+    "filter": [
+      "year:[1980 TO 2000]"
+    ]
+  },
+  "response": {
+    "numFound": 9,
+    "start": 0,
+    "maxScore": 5.869958,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "612757",
+        "title": "Piper Alpha",
+        "score": 5.869958
+      },
+      {
+        "id": "2336843",
+        "title": "Mont Blanc Tunnel fire",
+        "score": 5.367007
+      },
+      {
+        "id": "1800764",
+        "title": "Stardust fire",
+        "score": 5.2260013
+      },
+      {
+        "id": "349790",
+        "title": "Khobar Towers bombing",
+        "score": 4.890707
+      },
+      {
+        "id": "19512765",
+        "title": "EgyptAir Flight 990",
+        "score": 4.3169365
+      },
+      {
+        "id": "390520",
+        "title": "Iran Air Flight 655",
+        "score": 3.9783375
+      },
+      {
+        "id": "37810662",
+        "title": "AMIA bombing",
+        "score": 3.349471
+      },
+      {
+        "id": "448557",
+        "title": "Tokyo subway sarin attack",
+        "score": 2.9306586
+      },
+      {
+        "id": "426865",
+        "title": "United Airlines Flight 232",
+        "score": 2.766664
+      }
+    ]
+  }
+}
