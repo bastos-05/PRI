@@ -5,7 +5,7 @@
     "params": {
         "defType": "edismax",
         "qf": "title_en^1.5 text_en",
-        "pf": "text_en^2",
-        "mm": "75%"
+        "pf2": "text_en^2",
+        "ps2": 2
     }
 }
